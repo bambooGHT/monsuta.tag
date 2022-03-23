@@ -1,0 +1,338 @@
+html {
+  font-size: 10px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+}
+
+.box input {
+  display: none;
+}
+
+.box input:nth-child(n + 2):checked ~ .box2 .attribute li:nth-child(1) .atb, .box input:nth-child(n + 2):checked ~ .box3 .attribute li:nth-child(1) .atb {
+  color: black;
+  text-shadow: none;
+}
+
+.box #atb:checked ~ .box2 .attribute li:nth-child(1) .atb:nth-child(1), .box #atb:checked ~ .box3 .attribute li:nth-child(1) .atb:nth-child(1) {
+  color: #fff;
+}
+
+.box #atb1:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb1:checked ~ .td section .fire {
+  display: block;
+}
+
+.box #atb1:checked ~ .box2 .attribute li:nth-child(2) .atb, .box #atb1:checked ~ .box3 .attribute li:nth-child(2) .atb {
+  color: #fff;
+  text-shadow: 0 0 1rem #ff4000;
+}
+
+.box #atb2:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb2:checked ~ .td section .water {
+  display: block;
+}
+
+.box #atb2:checked ~ .box2 .attribute li:nth-child(3) .atb, .box #atb2:checked ~ .box3 .attribute li:nth-child(3) .atb {
+  color: #fff;
+  text-shadow: 0 0 1rem #00aaff;
+}
+
+.box #atb3:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb3:checked ~ .td section .land {
+  display: block;
+}
+
+.box #atb3:checked ~ .box2 .attribute li:nth-child(4) .atb, .box #atb3:checked ~ .box3 .attribute li:nth-child(4) .atb {
+  color: #fff;
+  text-shadow: 0 0 1rem #99511e;
+}
+
+.box #atb4:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb4:checked ~ .td section .wind {
+  display: block;
+}
+
+.box #atb4:checked ~ .box2 .attribute li:nth-child(5) .atb, .box #atb4:checked ~ .box3 .attribute li:nth-child(5) .atb {
+  color: #fff;
+  text-shadow: 0 0 1rem #15ff00;
+}
+
+.box #atb5:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb5:checked ~ .td section .Light {
+  display: block;
+}
+
+.box #atb5:checked ~ .box2 .attribute li:nth-child(6) .atb, .box #atb5:checked ~ .box3 .attribute li:nth-child(6) .atb {
+  color: #fff;
+  text-shadow: 0 0 1rem #f7ea00;
+}
+
+.box #atb6:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb6:checked ~ .td section .dark {
+  display: block;
+}
+
+.box #atb6:checked ~ .box2 .attribute li:nth-child(7) .atb, .box #atb6:checked ~ .box3 .attribute li:nth-child(7) .atb {
+  color: #fff;
+  text-shadow: 0 0 1rem #5100ff;
+}
+
+.box #atb7:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb7:checked ~ .td section .Warrior {
+  display: block;
+}
+
+.box #atb7:checked ~ .box2 .attribute li:nth-child(1) .atb1, .box #atb7:checked ~ .box3 .attribute li:nth-child(1) .atb1 {
+  color: #fff;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
+.box #atb8:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb8:checked ~ .td section .guard {
+  display: block;
+}
+
+.box #atb8:checked ~ .box2 .attribute li:nth-child(2) .atb1, .box #atb8:checked ~ .box3 .attribute li:nth-child(2) .atb1 {
+  color: #fff;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
+.box #atb9:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb9:checked ~ .td section .Sniper {
+  display: block;
+}
+
+.box #atb9:checked ~ .box2 .attribute li:nth-child(3) .atb1, .box #atb9:checked ~ .box3 .attribute li:nth-child(3) .atb1 {
+  color: #fff;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
+.box #atb10:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb10:checked ~ .td section .Sorcerer {
+  display: block;
+}
+
+.box #atb10:checked ~ .box2 .attribute li:nth-child(4) .atb1, .box #atb10:checked ~ .box3 .attribute li:nth-child(4) .atb1 {
+  color: #fff;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
+.box #atb11:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb11:checked ~ .td section .Healer {
+  display: block;
+}
+
+.box #atb11:checked ~ .box2 .attribute li:nth-child(5) .atb1, .box #atb11:checked ~ .box3 .attribute li:nth-child(5) .atb1 {
+  color: #fff;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
+.box #atb12:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb12:checked ~ .td section .assassin {
+  display: block;
+}
+
+.box #atb12:checked ~ .box2 .attribute li:nth-child(6) .atb1, .box #atb12:checked ~ .box3 .attribute li:nth-child(6) .atb1 {
+  color: #fff;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
+.box #atb13:checked ~ .td section .img {
+  display: none;
+}
+
+.box #atb13:checked ~ .td section .sup {
+  display: block;
+}
+
+.box #atb13:checked ~ .box2 .attribute li:nth-child(7) .atb1, .box #atb13:checked ~ .box3 .attribute li:nth-child(7) .atb1 {
+  color: #fff;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
+.box .box1 {
+  width: 100%;
+  height: 100%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.box .box1 p {
+  color: #ddd1d1;
+  text-shadow: 0.1rem 0.1rem 0.1rem red;
+}
+
+.box .box1 p:nth-child(1) {
+  font-size: 2.5rem;
+}
+
+.box .box1 p:nth-child(2) {
+  font-size: 2rem;
+}
+
+.box .box1 p:nth-child(3) {
+  font-size: 2rem;
+}
+
+.box .box1 p span {
+  color: red;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.box .box2, .box .box3 {
+  width: auto;
+  height: 100%;
+}
+
+.box .box2 .attribute, .box .box3 .attribute {
+  text-align: center;
+  font-size: 0;
+}
+
+.box .box2 .attribute li, .box .box3 .attribute li {
+  display: inline-block;
+  width: 11.5rem;
+  height: auto;
+  background: url(1.png) no-repeat, url(3.png) no-repeat right, url(2.png);
+  background-size: auto 100%;
+  margin: 1rem 0.8rem;
+  text-align: center;
+  vertical-align: top;
+  border-radius: 0.8rem;
+  font-size: 0;
+}
+
+.box .box2 .attribute li:active, .box .box3 .attribute li:active {
+  -webkit-transform: perspective(10rem) translateZ(-0.2rem);
+          transform: perspective(10rem) translateZ(-0.2rem);
+  font-size: 0;
+}
+
+.box .box2 .attribute li:nth-child(1) .atb:nth-child(1), .box .box3 .attribute li:nth-child(1) .atb:nth-child(1) {
+  color: #fff;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
+.box .box2 .attribute li label, .box .box3 .attribute li label {
+  display: inline-block;
+  width: 11.5rem;
+  height: 3.1rem;
+  line-height: 3.1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.box .td {
+  width: 100%;
+  height: 100%;
+}
+
+.box .td section {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 1.5rem 1rem 0;
+  min-height: 8.7rem;
+}
+
+.box .td section::before, .box .td section::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.box .td section .L {
+  width: auto;
+  height: 3rem;
+  position: absolute;
+  top: -3rem;
+  font: 2rem/3rem 'Orbitron', sans-serif;
+  text-align: center;
+  color: #0077ff;
+}
+
+.box .td section .img {
+  display: block;
+  width: 6rem;
+  height: 7.5rem;
+  border: 1px solid #ffd06f;
+  margin: 1rem 0 0 1.5rem;
+}
+
+.box .td section .img img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.box .td section .img p {
+  line-height: 1.4;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.box .td .td-1 {
+  background-color: #db454a;
+}
+
+.box .td .td-2 {
+  background-color: #5145c7;
+}
+
+.box .td .td-3 {
+  background-color: #3a75a0;
+}
+
+.box .td .td-4 {
+  background-color: #9e8d75;
+}

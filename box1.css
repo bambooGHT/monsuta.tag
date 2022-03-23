@@ -1,0 +1,82 @@
+html {
+  font-size: 10px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+}
+
+.box .td {
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+}
+
+.box .td section {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 1.5rem 1rem 0;
+}
+
+.box .td section::before, .box .td section::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.box .td section .L {
+  width: auto;
+  height: 3rem;
+  position: absolute;
+  top: -3rem;
+  font: 2rem/3rem 'Orbitron', sans-serif;
+  text-align: center;
+  color: #0077ff;
+}
+
+.box .td section .img {
+  display: block;
+  width: 6rem;
+  height: 7.5rem;
+  border: 1px solid #ffd06f;
+  margin: 1rem 0 0 1.5rem;
+}
+
+.box .td section .img img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.box .td section .img p {
+  line-height: 1.4;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.box .td .td-1 {
+  background-color: #db454a;
+}
+
+.box .td .td-2 {
+  background-color: #5145c7;
+}
+
+.box .td .td-3 {
+  background-color: #3a75a0;
+}
+
+.box .td .td-4 {
+  background-color: #9e8d75;
+}

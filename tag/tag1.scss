@@ -1,0 +1,83 @@
+html {
+    font-size: 10px;
+}
+@mixin ras($a: 100%, $b: 100%) {
+    width: $a;
+    height: $b;
+}
+.box {
+    .td2 {
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: none;
+        padding: 2rem 0;
+        .td2-1 {
+            @include ras(55%, 100%);
+            .cn{
+                position: absolute;
+                right: 0;
+                left: -6.3rem;
+            }
+            .img{
+                position: absolute;
+                right: 0;
+                left: -5.4rem;
+            }
+            .t {
+                flex-direction: column;
+                .t1 {
+                    @include ras(100%, 100%);
+                    border: none;
+                    border-bottom: 2px solid rgb(255, 255, 255);
+
+                    img {
+                        @include ras(50%, auto);
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+                .t2 {
+                    @include ras(80%, 100%);
+                    ul {
+                        li {
+                            span {
+                                font-size: 1.6rem;
+                                &:nth-child(1) {
+                                    width: 25%;
+                                }
+                            }
+                            p {
+                                font-size: 1.5rem;
+                                &:nth-child(2) {
+                                    font-size: 1.2rem;
+                                    border-bottom: 0.2rem solid rgba(0, 0, 0, 0.2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .t3 {
+                .tile {
+                    p:nth-child(1) {
+                        font-size: 1.6rem;
+                    }
+                    p:nth-child(n + 2) {
+                        font-size: 1.4rem;
+                    }
+                    .kurasu {
+                        span:nth-child(1) {
+                            @include ras;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .td2-2{
+            width: 19rem;
+        }
+    }
+}

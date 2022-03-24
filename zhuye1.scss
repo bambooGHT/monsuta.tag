@@ -1,0 +1,48 @@
+@mixin ras($a: 100%, $b: 100%) {
+    width: $a;
+    height: $b;
+}
+body{
+    min-width: 50rem;
+}
+.box {
+    .box1 {
+        @include ras(50rem, 27.4rem);
+        .back {
+            @include ras(199.6rem, 27.4rem);
+        }
+    }
+    section {
+        @include ras;
+        flex-wrap: wrap;
+        .box2 {
+            @include ras(100%, 100%);
+            p {
+                font-size: 3rem;
+                text-align: center;
+                color: white;
+            }
+        }
+        span {
+            @include ras(80%, 0.2rem);
+            margin: 0 auto;
+        }
+        .box3 {
+            @include ras(100%, 100%);
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            p {
+                a {
+                    font-weight: bold;
+                }
+                a:link {
+                    color: red;
+                }
+                a:visited {
+                    color: white;
+                }
+            }
+        }
+    }
+}

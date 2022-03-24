@@ -4,13 +4,13 @@
 }
 
 .box .td2 .td2-1 {
-  width: 60%;
+  width: 65%;
   height: 100%;
 }
 
 .box .td2 .td2-1 .cn {
   position: fixed;
-  right: 78.6%;
+  right: 80%;
   left: auto;
   top: auto;
   margin-top: 5rem;
@@ -19,7 +19,7 @@
 
 .box .td2 .td2-1 .img {
   position: fixed;
-  right: 78.6%;
+  right: 80%;
   left: auto;
   top: auto;
   margin-right: auto;
@@ -52,7 +52,7 @@
 }
 
 .box .td2 .td2-1 .t3 .tile {
-  width: 85%;
+  width: 90%;
 }
 
 .box .td2 .td2-1 .t3 .tile p:nth-child(1) {
@@ -74,8 +74,6 @@
 }
 
 .box .td2 .td2-2 {
-  width: 60%;
-  height: 100%;
   margin: 1rem 0;
 }
 

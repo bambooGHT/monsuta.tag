@@ -1,3 +1,7 @@
+body {
+  min-width: 50rem;
+}
+
 .box .box1 {
   width: 50rem;
   height: 27.4rem;
@@ -17,7 +21,7 @@
 
 .box section .box2 {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .box section .box2 p {
@@ -26,7 +30,7 @@
   color: white;
 }
 
-.box section i {
+.box section span {
   width: 80%;
   height: 0.2rem;
   margin: 0 auto;
@@ -34,8 +38,7 @@
 
 .box section .box3 {
   width: 100%;
-  height: auto;
-  height: auto;
+  height: 100%;
   text-align: center;
   color: white;
   font-size: 2rem;

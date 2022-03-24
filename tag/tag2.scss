@@ -6,10 +6,10 @@
     .td2 {
         flex-wrap: wrap;
         .td2-1 {
-            @include ras(65%, 100%);
+            @include ras(70%, 100%);
             .cn {
                 position: fixed;
-                right: 80%;
+                right: 83%;
                 left: auto;
                 top: auto;
                 margin-top: 5rem;
@@ -17,7 +17,7 @@
             }
             .img {
                 position: fixed;
-                right: 80%;
+                right: 83%;
                 left: auto;
                 top: auto;
                 margin-right: auto;

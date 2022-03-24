@@ -113,10 +113,12 @@ body {
 
 .box #lv2:checked ~ .td2-1 .t3 .tile .ex label:nth-child(2) {
   color: black;
+  text-shadow: none;
 }
 
 .box #lv2:checked ~ .td2-1 .t3 .tile .ex label:nth-child(3) {
-  color: red;
+  color: #ffffff;
+  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
 }
 
 .box #lv2:checked ~ .td2-1 .t3 .tile .ex .lv1-1:nth-child(1) {
@@ -129,10 +131,12 @@ body {
 
 .box #lv3:checked ~ .td2-1 .t3 .tile .ex label:nth-child(2) {
   color: black;
+  text-shadow: none;
 }
 
 .box #lv3:checked ~ .td2-1 .t3 .tile .ex label:nth-child(4) {
-  color: red;
+  color: #ffffff;
+  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
 }
 
 .box #lv3:checked ~ .td2-1 .t3 .tile .ex .lv1-1:nth-child(1) {
@@ -145,10 +149,12 @@ body {
 
 .box #lv4:checked ~ .td2-1 .t3 .tile .ex label:nth-child(2) {
   color: black;
+  text-shadow: none;
 }
 
 .box #lv4:checked ~ .td2-1 .t3 .tile .ex label:nth-child(5) {
-  color: red;
+  color: #ffffff;
+  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
 }
 
 .box #lv4:checked ~ .td2-1 .t3 .tile .ex .lv1-1:nth-child(1) {
@@ -161,10 +167,12 @@ body {
 
 .box #lv5:checked ~ .td2-1 .t3 .tile .ex label:nth-child(2) {
   color: black;
+  text-shadow: none;
 }
 
 .box #lv5:checked ~ .td2-1 .t3 .tile .ex label:nth-child(6) {
-  color: red;
+  color: #ffffff;
+  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
 }
 
 .box #lv5:checked ~ .td2-1 .t3 .tile .ex .lv1-1:nth-child(1) {
@@ -524,7 +532,8 @@ body {
 }
 
 .box .td2 .td2-1 .t3 .tile .ex label:nth-child(2) {
-  color: red;
+  color: #ffffff;
+  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
 }
 
 .box .td2 .td2-1 .t3 .tile .ex span {

@@ -193,9 +193,11 @@ body {
                         label {
                             &:nth-child(2) {
                                 color: black;
+                                text-shadow: none;
                             }
                             &:nth-child(3) {
-                                @include colo;
+                                color: #ffffff;
+                                text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
                             }
                         }
                         .lv1-1:nth-child(1) {
@@ -217,9 +219,11 @@ body {
                         label {
                             &:nth-child(2) {
                                 color: black;
+                                text-shadow: none;
                             }
                             &:nth-child(4) {
-                                @include colo;
+                                color: #ffffff;
+                                text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
                             }
                         }
                         .lv1-1:nth-child(1) {
@@ -241,9 +245,11 @@ body {
                         label {
                             &:nth-child(2) {
                                 color: black;
+                                text-shadow: none;
                             }
                             &:nth-child(5) {
-                                @include colo;
+                                color: #ffffff;
+                                text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
                             }
                         }
                         .lv1-1:nth-child(1) {
@@ -265,9 +271,11 @@ body {
                         label {
                             &:nth-child(2) {
                                 color: black;
+                                text-shadow: none;
                             }
                             &:nth-child(6) {
-                                @include colo;
+                                color: #ffffff;
+                                text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
                             }
                         }
                         .lv1-1:nth-child(1) {
@@ -537,7 +545,8 @@ body {
                             @extend .lv;
                             margin-right: 0.5rem;
                             &:nth-child(2) {
-                                @include colo;
+                                color: #ffffff;
+                                text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
                             }
                         }
                         span {

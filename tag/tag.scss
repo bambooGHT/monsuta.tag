@@ -192,12 +192,14 @@ body {
                     .ex {
                         label {
                             &:nth-child(2) {
-                                color: black;
-                                text-shadow: none;
+                                -webkit-text-fill-color: rgb(0, 0, 0);
+                                -webkit-text-stroke-color: 0;
+                                -webkit-text-stroke-width: 0;
                             }
                             &:nth-child(3) {
-                                color: #ffffff;
-                                text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+                                -webkit-text-fill-color: rgb(255, 255, 255);
+                                -webkit-text-stroke-color: rgb(0, 0, 0);
+                                -webkit-text-stroke-width: 0.1rem;
                             }
                         }
                         .lv1-1:nth-child(1) {
@@ -218,12 +220,14 @@ body {
                     .ex {
                         label {
                             &:nth-child(2) {
-                                color: black;
-                                text-shadow: none;
+                                -webkit-text-fill-color: rgb(0, 0, 0);
+                                -webkit-text-stroke-color: 0;
+                                -webkit-text-stroke-width: 0;
                             }
                             &:nth-child(4) {
-                                color: #ffffff;
-                                text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+                                -webkit-text-fill-color: rgb(255, 255, 255);
+                                -webkit-text-stroke-color: rgb(0, 0, 0);
+                                -webkit-text-stroke-width: 0.1rem;
                             }
                         }
                         .lv1-1:nth-child(1) {
@@ -244,12 +248,14 @@ body {
                     .ex {
                         label {
                             &:nth-child(2) {
-                                color: black;
-                                text-shadow: none;
+                                -webkit-text-fill-color: rgb(0, 0, 0);
+                                -webkit-text-stroke-color: 0;
+                                -webkit-text-stroke-width: 0;
                             }
                             &:nth-child(5) {
-                                color: #ffffff;
-                                text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+                                -webkit-text-fill-color: rgb(255, 255, 255);
+                                -webkit-text-stroke-color: rgb(0, 0, 0);
+                                -webkit-text-stroke-width: 0.1rem;
                             }
                         }
                         .lv1-1:nth-child(1) {
@@ -270,12 +276,14 @@ body {
                     .ex {
                         label {
                             &:nth-child(2) {
-                                color: black;
-                                text-shadow: none;
+                                -webkit-text-fill-color: rgb(0, 0, 0);
+                                -webkit-text-stroke-color: 0;
+                                -webkit-text-stroke-width: 0;
                             }
                             &:nth-child(6) {
-                                color: #ffffff;
-                                text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+                                -webkit-text-fill-color: rgb(255, 255, 255);
+                                -webkit-text-stroke-color: rgb(0, 0, 0);
+                                -webkit-text-stroke-width: 0.1rem;
                             }
                         }
                         .lv1-1:nth-child(1) {
@@ -545,8 +553,9 @@ body {
                             @extend .lv;
                             margin-right: 0.5rem;
                             &:nth-child(2) {
-                                color: #ffffff;
-                                text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+                                -webkit-text-fill-color: rgb(255, 255, 255);
+                                -webkit-text-stroke-color: rgb(0, 0, 0);
+                                -webkit-text-stroke-width: 0.1rem;
                             }
                         }
                         span {

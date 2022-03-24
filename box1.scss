@@ -364,26 +364,28 @@ html {
         margin: auto;
         margin-bottom: 2rem;
         text-align: center;
-        p{
+        p {
             color: rgb(221, 209, 209);
             text-shadow: 0.1rem 0.1rem 0.1rem rgb(255, 0, 0);
-            &:nth-child(1){
+            &:nth-child(1) {
                 font-size: 2.5rem;
             }
-            &:nth-child(2){
+            &:nth-child(2),
+            &:nth-child(3) {
                 font-size: 2rem;
             }
-            &:nth-child(3){
-                font-size: 2rem;
-            }
-            &:nth-child(4){
+            &:nth-child(4) {
                 font-size: 2rem;
                 margin-top: 1rem;
+                a {
+                    color: #28b496;
+                    text-shadow: 0.1rem 0.1rem 1rem rgb(0, 0, 0);
+                }
             }
-            span{
+            span {
                 color: red;
                 font-size: 2.5rem;
-                font-weight: bold；
+                font-weight: bold；;
             }
         }
     }
@@ -392,6 +394,10 @@ html {
         .attribute {
             text-align: center;
             font-size: 0;
+            .All {
+                display: block;
+                margin: 0 auto;
+            }
             li {
                 display: inline-block;
                 @include ras(11.5rem, auto);
@@ -429,15 +435,18 @@ html {
     .td {
         @include ras;
         section {
+            * {
+                box-sizing: border-box;
+            }
             position: relative;
             @include ras(80%, 100%);
             margin: 0 auto;
             margin-top: 5rem;
-            @include taxian;
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 1.5rem 1rem 0;
             min-height: 8.7rem;
+            padding: 1rem 0 0 1rem;
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: repeat(auto-fill, 70px);
             .L {
                 @include ras(auto, 3rem);
                 position: absolute;
@@ -448,9 +457,9 @@ html {
             }
             .img {
                 display: block;
-                @include ras(6rem, 7.5rem);
+                @include ras(6.2rem, 7.6rem);
                 border: 1px solid #ffd06f;
-                margin: 1rem 0 0 1.5rem;
+                margin-bottom: 1rem;
                 img {
                     @include ras(100%, auto);
                     vertical-align: top;

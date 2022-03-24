@@ -112,13 +112,15 @@ body {
 }
 
 .box #lv2:checked ~ .td2-1 .t3 .tile .ex label:nth-child(2) {
-  color: black;
-  text-shadow: none;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: 0;
+  -webkit-text-stroke-width: 0;
 }
 
 .box #lv2:checked ~ .td2-1 .t3 .tile .ex label:nth-child(3) {
-  color: #ffffff;
-  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.1rem;
 }
 
 .box #lv2:checked ~ .td2-1 .t3 .tile .ex .lv1-1:nth-child(1) {
@@ -130,13 +132,15 @@ body {
 }
 
 .box #lv3:checked ~ .td2-1 .t3 .tile .ex label:nth-child(2) {
-  color: black;
-  text-shadow: none;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: 0;
+  -webkit-text-stroke-width: 0;
 }
 
 .box #lv3:checked ~ .td2-1 .t3 .tile .ex label:nth-child(4) {
-  color: #ffffff;
-  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.1rem;
 }
 
 .box #lv3:checked ~ .td2-1 .t3 .tile .ex .lv1-1:nth-child(1) {
@@ -148,13 +152,15 @@ body {
 }
 
 .box #lv4:checked ~ .td2-1 .t3 .tile .ex label:nth-child(2) {
-  color: black;
-  text-shadow: none;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: 0;
+  -webkit-text-stroke-width: 0;
 }
 
 .box #lv4:checked ~ .td2-1 .t3 .tile .ex label:nth-child(5) {
-  color: #ffffff;
-  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.1rem;
 }
 
 .box #lv4:checked ~ .td2-1 .t3 .tile .ex .lv1-1:nth-child(1) {
@@ -166,13 +172,15 @@ body {
 }
 
 .box #lv5:checked ~ .td2-1 .t3 .tile .ex label:nth-child(2) {
-  color: black;
-  text-shadow: none;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: 0;
+  -webkit-text-stroke-width: 0;
 }
 
 .box #lv5:checked ~ .td2-1 .t3 .tile .ex label:nth-child(6) {
-  color: #ffffff;
-  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.1rem;
 }
 
 .box #lv5:checked ~ .td2-1 .t3 .tile .ex .lv1-1:nth-child(1) {
@@ -532,8 +540,9 @@ body {
 }
 
 .box .td2 .td2-1 .t3 .tile .ex label:nth-child(2) {
-  color: #ffffff;
-  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.1rem;
 }
 
 .box .td2 .td2-1 .t3 .tile .ex span {

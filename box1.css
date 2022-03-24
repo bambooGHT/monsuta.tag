@@ -208,17 +208,18 @@ html {
   font-size: 2.5rem;
 }
 
-.box .box1 p:nth-child(2) {
-  font-size: 2rem;
-}
-
-.box .box1 p:nth-child(3) {
+.box .box1 p:nth-child(2), .box .box1 p:nth-child(3) {
   font-size: 2rem;
 }
 
 .box .box1 p:nth-child(4) {
   font-size: 2rem;
   margin-top: 1rem;
+}
+
+.box .box1 p:nth-child(4) a {
+  color: #28b496;
+  text-shadow: 0.1rem 0.1rem 1rem black;
 }
 
 .box .box1 p span {
@@ -235,6 +236,11 @@ html {
 .box .box2 .attribute, .box .box3 .attribute {
   text-align: center;
   font-size: 0;
+}
+
+.box .box2 .attribute .All, .box .box3 .attribute .All {
+  display: block;
+  margin: 0 auto;
 }
 
 .box .box2 .attribute li, .box .box3 .attribute li {
@@ -282,19 +288,20 @@ html {
   height: 100%;
   margin: 0 auto;
   margin-top: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0 1.5rem 1rem 0;
   min-height: 8.7rem;
+  padding: 1rem 0 0 1rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: (70px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 70px);
 }
 
-.box .td section::before, .box .td section::after {
-  content: '';
-  display: table;
-  clear: both;
+.box .td section * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .box .td section .L {
@@ -309,10 +316,10 @@ html {
 
 .box .td section .img {
   display: block;
-  width: 6rem;
-  height: 7.5rem;
+  width: 6.2rem;
+  height: 7.6rem;
   border: 1px solid #ffd06f;
-  margin: 1rem 0 0 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .box .td section .img img {

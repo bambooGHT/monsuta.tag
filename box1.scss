@@ -360,7 +360,7 @@ html {
         }
     }
     .box1 {
-        @include ras;
+        @include ras(80%,100%);
         margin: auto;
         margin-bottom: 2rem;
         text-align: center;

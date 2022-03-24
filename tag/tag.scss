@@ -552,6 +552,7 @@ body {
                         label {
                             @extend .lv;
                             margin-right: 0.5rem;
+                            font: 1.6rem/3rem 'Orbitron', sans-serif;
                             &:nth-child(2) {
                                 -webkit-text-fill-color: rgb(255, 255, 255);
                                 -webkit-text-stroke-color: rgb(0, 0, 0);

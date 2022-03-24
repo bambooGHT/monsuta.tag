@@ -537,6 +537,7 @@ body {
 
 .box .td2 .td2-1 .t3 .tile .ex label {
   margin-right: 0.5rem;
+  font: 1.6rem/3rem 'Orbitron', sans-serif;
 }
 
 .box .td2 .td2-1 .t3 .tile .ex label:nth-child(2) {

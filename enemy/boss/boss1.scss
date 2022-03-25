@@ -2,5 +2,16 @@
     width: 95%;
     .box1 {
         width: 95%;
+        .tag{
+            .pane2{
+                ul{
+                    li{
+                        &:nth-child(n+7){
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

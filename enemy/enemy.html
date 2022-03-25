@@ -8,26 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../a.css">
     <link rel="stylesheet" href="enemy.css">
-    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js" src="input.js">
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js">
     </script>
 </head>
-
-<script type="text/javascript">
-    $(function () {
-        $('input:radio').click(function () {
-            var domName = $(this).attr('name');
-            var $radio = $(this);
-            if ($radio.data('waschecked') == true) {
-                $radio.prop('checked', false);
-                $("input:radio[name='" + domName + "']").data('waschecked', false);
-            } else {
-                $radio.prop('checked', true);
-                $("input:radio[name='" + domName + "']").data('waschecked', false);
-                $radio.data('waschecked', true);
-            }
-        });
-    });
-</script>
 
 <body>
     <div class="box">
@@ -81,7 +64,24 @@
                 height="1050px"></object>
         </div>
     </div>
-
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('input:radio').click(function () {
+                var domName = $(this).attr('name');
+                var $radio = $(this);
+                if ($radio.data('waschecked') == true) {
+                    $radio.prop('checked', false);
+                    $("input:radio[name='" + domName + "']").data('waschecked', false);
+                } else {
+                    $radio.prop('checked', true);
+                    $("input:radio[name='" + domName + "']").data('waschecked', false);
+                    $radio.data('waschecked', true);
+                }
+            });
+        });
+    </script>
 
 </body>
 

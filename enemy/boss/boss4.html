@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../a.css">
+    <link rel="stylesheet" href="boss.css">
+    <link rel="stylesheet" href="boss1.css" media="screen and (max-width:799px)">
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <header class="top">
+                <img src="boss4.png" alt="">
+            </header>
+            <div class="tag">
+                <section class="panel">
+                    <aside>
+                        <span>特殊</span>
+                        <span>兵器</span>
+                    </aside>
+                    <ul>
+                        <li>
+                            <p>能力値</p>
+                            <p>HP</p>
+                            <p>攻撃力</p>
+                            <p>物理防御</p>
+                            <p>魔法防御</p>
+                        </li>
+                        <li>
+                            <p>基本值</p>
+                            <p>11000</p>
+                            <p>150</p>
+                            <p>500</p>
+                            <p>500</p>
+                        </li>
+                        <li>
+                            <p>LV 1</p>
+                            <p>13200</p>
+                            <p>180</p>
+                            <p>600</p>
+                            <p>600</p>
+                        </li>
+                        <li>
+                            <p>LV 2</p>
+                            <p>14300</p>
+                            <p>195</p>
+                            <p>650</p>
+                            <p>650</p>
+                        </li>
+                        <li>
+                            <p>LV 3</p>
+                            <p>15400</p>
+                            <p>210</p>
+                            <p>700</p>
+                            <p>700</p>
+                        </li>
+                        <li>
+                            <p>LV 4</p>
+                            <p>16500</p>
+                            <p>225</p>
+                            <p>750</p>
+                            <p>750</p>
+                        </li>
+                        <li>
+                            <p>LV 5</p>
+                            <p>17600</p>
+                            <p>240</p>
+                            <p>800</p>
+                            <p>800</p>
+                        </li>
+                        <li>
+                            <p>LV 5補正</p>
+                            <p> </p>
+                            <p>288</p>
+                            <p> </p>
+                            <p> </p>
+                        </li>
+                    </ul>
+
+                    <section class="describe">
+                        一定時間毎に搭載された魔導兵器を呼び出します。 <br />
+                        一定時間毎に直線状の高威力の貫通攻撃を行います。 <br />
+                        HPが減少すると、前方に大して高威力の攻撃を行います。
+                    </section>
+                </section>
+                <section class="pane2">
+                    <div class="pa-1">スキル/1</div>
+                    <ul>
+                        <li>
+                            <p>等级</p>
+                            <p>攻撃力補正</p>
+                            <p>実際攻撃力</p>
+                            <p class="pa">貫通</p>
+                        </li>
+                        <li>
+                            <p> LV 1</p>
+                            <p>1.0倍</p>
+                            <p>180*11</p>
+                            <p>1分経過毎、及び残り30秒時に、前方4列に対して直線状の遠距離攻撃を行う
+                                着弾したユニットよりも同列後方のユニットには攻撃は届かない
+                                時間経過とは別にHPが一定値未満に減少する事でも貫通攻撃を行う</p>
+                        </li>
+                        <li>
+                            <p>LV 2</p>
+                            <p>1.0倍</p>
+                            <p>195*11</p>
+                        </li>
+                        <li>
+                            <p>LV 3</p>
+                            <p>1.0倍</p>
+                            <p>210*11</p>
+                        </li>
+                        <li>
+                            <p>LV 4</p>
+                            <p>1.0倍</p>
+                            <p>225*11</p>
+                        </li>
+                        <li>
+                            <p>LV 5</p>
+                            <p>1.0倍</p>
+                            <p>288*11</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="pane2">
+                    <div class="pa-1">スキル/2</div>
+                    <ul>
+                        <li>
+                            <p>等级</p>
+                            <p>攻撃力補正</p>
+                            <p>実際攻撃力</p>
+                            <p class="pa">物理</p>
+                        </li>
+                        <li>
+                            <p> LV 1</p>
+                            <p>30倍</p>
+                            <p>5400</p>
+                            <p>HPが一定値未満に減少すると、前方に対して位置指定の範囲攻撃を行う</p>
+                        </li>
+                        <li>
+                            <p>LV 2</p>
+                            <p>30倍</p>
+                            <p>5850</p>
+                        </li>
+                        <li>
+                            <p>LV 3</p>
+                            <p>30倍</p>
+                            <p>6300</p>
+                        </li>
+                        <li>
+                            <p>LV 4</p>
+                            <p>30倍</p>
+                            <p>6750</p>
+                        </li>
+                        <li>
+                            <p>LV 5</p>
+                            <p>30倍</p>
+                            <p>8640</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="pane3">
+                    <p>HP80%未満（14080未満）→貫通直線攻撃</p>
+                    <p>HP70%未満（12320未満）→貫通直線攻撃</p>
+                    <p>HP60%未満（10560未満）→貫通直線攻撃</p>
+                    <p>HP50%未満（8800未満）→物理範囲攻撃</p>
+                    <p>HP40%未満（7040未満）→貫通直線攻撃</p>
+                    <p>HP30%未満（5280未満）→貫通直線攻撃</p>
+                    <p>HP20%未満（3520未満）→貫通直線攻撃</p>
+                    <p>HP10%未満（1760未満）→物理範囲攻撃</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

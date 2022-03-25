@@ -1,0 +1,147 @@
+html {
+  font-size: 10px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+}
+
+.box input {
+  display: none;
+}
+
+.box object {
+  display: none;
+}
+
+.box #boss1:checked ~ .boss1 object {
+  display: block;
+}
+
+.box #boss2:checked ~ .boss2 object {
+  display: block;
+}
+
+.box #boss3:checked ~ .boss3 object {
+  display: block;
+}
+
+.box #boss4:checked ~ .boss4 object {
+  display: block;
+}
+
+.box #boss5:checked ~ .boss5 object {
+  display: block;
+}
+
+.box .header {
+  width: 30%;
+  height: 5rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.box .header::before, .box .header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.box .header #a:checked ~ .top .top-name:nth-child(1) {
+  color: #ffffff;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
+.box .header #a:checked ~ .cheack {
+  height: 20rem;
+}
+
+.box .header #a:checked ~ .cheack .che1 {
+  display: block;
+}
+
+.box .header #n:checked ~ .top .top-name:nth-child(2) {
+  color: #ffffff;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
+.box .header #n:checked ~ .cheack {
+  height: 20rem;
+}
+
+.box .header #n:checked ~ .cheack .che2 {
+  display: block;
+}
+
+.box .header .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  background-color: antiquewhite;
+  position: relative;
+  z-index: 999;
+}
+
+.box .header .top .top-name {
+  width: 4rem;
+  height: 2rem;
+  font: bold 2rem/2rem Microsoft YaHei UI Light;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  padding: 1rem 1rem;
+}
+
+.box .header .top .top-name:nth-child(3) {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.box .header .top .top-name:nth-child(3) a {
+  color: #2f9271;
+}
+
+.box .header .cheack {
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: antiquewhite;
+  position: relative;
+  z-index: 99;
+  -webkit-box-shadow: 0 0 1rem #464040;
+          box-shadow: 0 0 1rem #464040;
+}
+
+.box .header .cheack div {
+  display: none;
+}
+
+.box .header .cheack div label {
+  display: block;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.box .header .cheack i {
+  display: block;
+  width: 95%;
+  height: 0.2rem;
+  background-color: #3bc9c9;
+  margin: 1rem auto;
+}
+
+@media screen and (max-width: 800px) {
+  .box .header {
+    width: 80%;
+  }
+}

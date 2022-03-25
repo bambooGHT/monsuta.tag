@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../a.css">
+    <link rel="stylesheet" href="boss.css">
+    <link rel="stylesheet" href="boss1.css" media="screen and (max-width:799px)">
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <header class="top">
+                <img src="boss3.png" alt="">
+            </header>
+            <div class="tag">
+                <section class="panel">
+                    <aside>
+                        <span>魔法</span>
+                        <span>遠距離</span>
+                        <span>飛行</span>
+                        <span>竜</span>
+                    </aside>
+                    <ul>
+                        <li>
+                            <p>能力値</p>
+                            <p>HP</p>
+                            <p>攻撃力</p>
+                            <p>物理防御</p>
+                            <p>魔法防御</p>
+                        </li>
+                        <li>
+                            <p>基本值</p>
+                            <p>8000</p>
+                            <p>600</p>
+                            <p>300</p>
+                            <p>300</p>
+                        </li>
+                        <li>
+                            <p>LV 1</p>
+                            <p>9600</p>
+                            <p>720</p>
+                            <p>360</p>
+                            <p>360</p>
+                        </li>
+                        <li>
+                            <p>LV 2</p>
+                            <p>10400</p>
+                            <p>780</p>
+                            <p>390</p>
+                            <p>390</p>
+                        </li>
+                        <li>
+                            <p>LV 3</p>
+                            <p>11200</p>
+                            <p>840</p>
+                            <p>420</p>
+                            <p>420</p>
+                        </li>
+                        <li>
+                            <p>LV 4</p>
+                            <p>12000</p>
+                            <p>900</p>
+                            <p>450</p>
+                            <p>450</p>
+                        </li>
+                        <li>
+                            <p>LV 5</p>
+                            <p>12800</p>
+                            <p>960</p>
+                            <p>480</p>
+                            <p>480</p>
+                        </li>
+                    </ul>
+                    <section class="describe">
+                        現在HPが最も高いキャラクターを優先して攻撃します。<br />
+                        一定時間毎に最もHPの高い対象に向けて火球を放ち、着弾した地点にダメージフィールドを発生させます。<br />
+                        ダメージフィールドにいる味方ユニットは継続的にダメージを受け続けます。<br />
+                        HPが減少すると更に大きなダメージフィールドを発生させるようになります。<br />
+                        HPが一定量減少する毎に、自身の周囲に大して超強力な範囲物理攻撃を行います。
+                    </section>
+                </section>
+                <section class="pane2">
+                    <div class="pa-1">スキル/1</div>
+                    <ul>
+                        <li>
+                            <p>等级</p>
+                            <p>攻撃力補正</p>
+                            <p>実際攻撃力</p>
+                            <p class="pa">魔法</p>
+                        </li>
+                        <li>
+                            <p> LV 1</p>
+                            <p>1.0倍</p>
+                            <p>720</p>
+                            <p>現在HPが最大高いユニットを優先して攻撃する
+                                着弾した地点にダメージフィールド発生（火球の攻撃力の20%分減少/1.0秒毎、10秒継続）
+                                HPが減少すると、範囲の広いダメージフィールドを発生させる（30秒継続）</p>
+                        </li>
+                        <li>
+                            <p>LV 2</p>
+                            <p>1.0倍</p>
+                            <p>780</p>
+                        </li>
+                        <li>
+                            <p>LV 3</p>
+                            <p>1.0倍</p>
+                            <p>840</p>
+                        </li>
+                        <li>
+                            <p>LV 4</p>
+                            <p>1.0倍</p>
+                            <p>900</p>
+                        </li>
+                        <li>
+                            <p>LV 5</p>
+                            <p>1.0倍</p>
+                            <p>960</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="pane2">
+                    <div class="pa-1">スキル/2</div>
+                    <ul>
+                        <li>
+                            <p>等级</p>
+                            <p>攻撃力補正</p>
+                            <p>実際攻撃力</p>
+                            <p class="pa">物理</p>
+                        </li>
+                        <li>
+                            <p> LV 1</p>
+                            <p>5倍</p>
+                            <p>3600</p>
+                            <p>HPが一定量減少する毎に、自身の周囲に対して位置指定の範囲攻撃を行う</p>
+                        </li>
+                        <li>
+                            <p>LV 2</p>
+                            <p>5倍</p>
+                            <p>3900</p>
+                        </li>
+                        <li>
+                            <p>LV 3</p>
+                            <p>5倍</p>
+                            <p>4200</p>
+                        </li>
+                        <li>
+                            <p>LV 4</p>
+                            <p>5倍</p>
+                            <p>4500</p>
+                        </li>
+                        <li>
+                            <p>LV 5</p>
+                            <p>5倍</p>
+                            <p>4800</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="pane3">
+                    <p>HP90%未満（11520未満）→物理範囲攻撃</p>
+                    <p>HP80%未満（10240未満）→物理範囲攻撃</p>
+                    <p>HP70%未満（8960未満）→物理範囲攻撃</p>
+                    <p>HP60%未満（7680未満）→物理範囲攻撃</p>
+                    <p>HP50%未満（6400未満）→火球（広範囲ダメージフィールド発生）</p>
+                    <p>HP40%未満（5120未満）→物理範囲攻撃</p>
+                    <p>HP30%未満（3840未満）→物理範囲攻撃</p>
+                    <p>HP20%未満（2560未満）→火球（広範囲ダメージフィールド発生）</p>
+                    <p>HP10%未満（1280未満）→物理範囲攻撃</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

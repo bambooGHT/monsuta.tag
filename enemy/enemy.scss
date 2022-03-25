@@ -1,0 +1,150 @@
+html {
+    font-size: 10px;
+}
+@mixin ras($a: 100%, $b: 100%) {
+    width: $a;
+    height: $b;
+}
+@mixin taxian {
+    &::before,
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+.box {
+    @include ras();
+    input {
+        display: none;
+    }
+    object {
+        display: none;
+    }
+    #boss1:checked ~{
+        .boss1{
+            object{
+                display: block;
+            }
+        }
+    }
+    #boss2:checked ~{
+        .boss2{
+            object{
+                display: block;
+            }
+        }
+    }
+    #boss3:checked ~{
+        .boss3{
+            object{
+                display: block;
+            }
+        }
+    }
+    #boss4:checked ~{
+        .boss4{
+            object{
+                display: block;
+            }
+        }
+    }
+    #boss5:checked ~{
+        .boss5{
+            object{
+                display: block;
+            }
+        }
+    }
+    .header {
+        @include ras(30%, 5rem);
+        margin: 0 auto;
+        margin-top: 1rem;
+        @include taxian;
+        #a:checked ~ {
+            .top {
+                .top-name {
+                    &:nth-child(1) {
+                        color: #ffffff;
+                        text-shadow: 0 0 0.5rem #000000;
+                    }
+                }
+            }
+            .cheack {
+                height: 20rem;
+                .che1 {
+                    display: block;
+                }
+            }
+        }
+        #n:checked ~ {
+            .top {
+                .top-name {
+                    &:nth-child(2) {
+                        color: #ffffff;
+                        text-shadow: 0 0 0.5rem #000000;
+                    }
+                }
+            }
+            .cheack {
+                height: 20rem;
+                .che2 {
+                    display: block;
+                }
+            }
+        }
+        .top {
+            display: flex;
+            @include ras(100%, 4rem);
+            background-color: antiquewhite;
+            position: relative;
+            z-index: 999;
+            .top-name {
+                @include ras(4rem, 2rem);
+                font: bold 2rem/2rem Microsoft YaHei UI Light;
+                flex: none;
+                padding: 1rem 1rem;
+                &:nth-child(3) {
+                    flex: auto;
+                    text-align: right;
+                    padding-right: 1rem;
+                    a {
+                        color: rgb(47, 146, 113);
+                    }
+                }
+            }
+        }
+        .cheack {
+            overflow: hidden;
+            @include ras(100%, 0);
+            transition: 0.5s;
+            background-color: antiquewhite;
+            position: relative;
+            z-index: 99;
+            box-shadow: 0 0 1rem rgb(70, 64, 64);
+            div {
+                display: none;
+                label {
+                    display: block;
+                    font-size: 1.8rem;
+                    text-align: center;
+                    margin: 0.5rem 0;
+                }
+            }
+            i {
+                display: block;
+                @include ras(95%, 0.2rem);
+                background-color: rgb(59, 201, 201);
+                margin: 1rem auto;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:800px) {
+    .box{
+        .header{
+            width: 80%;
+        }
+    }
+}

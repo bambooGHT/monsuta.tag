@@ -8,13 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../a.css">
     <link rel="stylesheet" href="enemy.css">
-    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js">
-    </script>
 </head>
 
 <body>
     <div class="box">
-        <input type="radio" name="boss" id="boss1">
+        <input type="radio" name="boss" id="boss1" value="1">
         <input type="radio" name="boss" id="boss2">
         <input type="radio" name="boss" id="boss3">
         <input type="radio" name="boss" id="boss4">
@@ -64,19 +62,19 @@
                 height="1050px"></object>
         </div>
     </div>
-    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js">
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.js">
     </script>
     <script type="text/javascript">
         $(function () {
             $('input:radio').click(function () {
-                var domName = $(this).attr('name');
+                var domName = $(this).attr('type');
                 var $radio = $(this);
                 if ($radio.data('waschecked') == true) {
                     $radio.prop('checked', false);
-                    $("input:radio[name='" + domName + "']").data('waschecked', false);
+                    $("input:radio[type='" + domName + "']").data('waschecked', false);
                 } else {
                     $radio.prop('checked', true);
-                    $("input:radio[name='" + domName + "']").data('waschecked', false);
+                    $("input:radio[type='" + domName + "']").data('waschecked', false);
                     $radio.data('waschecked', true);
                 }
             });

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Document</title>
     <link rel="stylesheet" href="../a.css">
     <link rel="stylesheet" href="enemy.css">
@@ -64,23 +65,8 @@
     </div>
     <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.js">
     </script>
-    <script type="text/javascript">
-        $(function () {
-            $('input:radio').click(function () {
-                var domName = $(this).attr('type');
-                var $radio = $(this);
-                if ($radio.data('waschecked') == true) {
-                    $radio.prop('checked', false);
-                    $("input:radio[type='" + domName + "']").data('waschecked', false);
-                } else {
-                    $radio.prop('checked', true);
-                    $("input:radio[type='" + domName + "']").data('waschecked', false);
-                    $radio.data('waschecked', true);
-                }
-            });
-        });
+    <script src="input.js">
     </script>
-
 </body>
 
 </html>

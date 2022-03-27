@@ -397,10 +397,12 @@ html {
   min-height: 1rem;
   -ms-grid-columns: (130px)[auto-fill];
       grid-template-columns: repeat(auto-fill, 130px);
+  width: 95%;
+  height: 100%;
 }
 
 .box .t2 section .img {
-  width: 13rem;
+  width: 12.5rem;
   height: 100%;
   pointer-events: none;
   border: none;
@@ -413,21 +415,26 @@ html {
 }
 
 .box .t2 section .img .tc1 {
-  width: 6.4rem;
-  height: 7.8rem;
+  width: 7rem;
+  height: 8.6rem;
   margin: 0 auto;
-  border: 2px solid #ffd06f;
+  border: 2px solid #ffaa00;
   pointer-events: auto;
+}
+
+.box .t2 section .img .tc1 p {
+  color: #ff1717;
+  font-weight: bold;
 }
 
 .box .t2 section .img .tc2 {
   width: 100%;
-  height: 9rem;
+  height: 7rem;
   pointer-events: none;
   font-size: 1.4rem;
   color: #000000;
   pointer-events: none;
-  border: 2px solid #ffd06f;
+  border: 2px solid #ffaa00;
   margin-top: -0.2rem;
   text-indent: 2rem;
 }

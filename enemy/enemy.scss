@@ -106,20 +106,26 @@ object {
         .top {
             display: flex;
             @include ras(100%, 4rem);
-            background-color: antiquewhite;
+            background: linear-gradient(135deg, transparent 15px, #E7D6B6 20%) top left,
+                linear-gradient(-135deg, transparent 15px, #E7D6B6 20%) top right,
+                linear-gradient(-45deg, transparent 15px, #E7D6B6 20%) bottom right,
+                linear-gradient(45deg, transparent 15px, #E7D6B6 20%) bottom left;
+            background-size: 51% 50%;
+            background-repeat: no-repeat;
             position: relative;
             z-index: 999;
+            margin-bottom: 0.1rem;
             .top-name {
                 @include ras(4rem, 2rem);
                 font: bold 2rem/2rem Microsoft YaHei UI Light;
                 flex: none;
-                padding: 1rem 1rem;
+                padding: 1rem 3rem;
                 &:nth-child(3) {
                     flex: auto;
                     text-align: right;
-                    padding-right: 1rem;
+                    padding-right: 3rem;
                     a {
-                        color: rgb(47, 146, 113);
+                        color: rgb(212, 0, 0);
                     }
                 }
             }
@@ -128,24 +134,46 @@ object {
             overflow: hidden;
             @include ras(100%, 0);
             transition: 0.5s;
-            background-color: antiquewhite;
+            background: radial-gradient(circle at top left, transparent 15px, #E7D6B6 0) top left,
+                radial-gradient(circle at top right, transparent 15px, #E7D6B6 0) top right,
+                radial-gradient(circle at bottom right, transparent 15px, #E7D6B6 0) bottom right,
+                radial-gradient(circle at bottom left, transparent 15px, #E7D6B6 0) bottom left;
+            background-size: 51% 51%;
+            background-repeat: no-repeat;
             position: relative;
             z-index: 99;
-            box-shadow: 0 0 1rem rgb(70, 64, 64);
             div {
                 display: none;
+                margin-top: 1rem;
                 label {
+                    width: auto;
                     display: block;
                     font-size: 1.8rem;
                     text-align: center;
                     margin: 0.5rem 0;
+                    span {
+                        position: relative;
+                        color: #333333;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 0.2rem;
+                            transition: 0.5s;
+                            background: linear-gradient(90deg, #ff0000, rgb(0, 255, 13));
+                            background-size: 0 0.2rem;
+                            background-repeat: no-repeat;
+                            background-position: 50% bottom;
+                            transition: 0.5s all;
+                        }
+
+                        &:hover::before {
+                            background-size: 100% 0.2rem;
+                        }
+                    }
                 }
-            }
-            i {
-                display: block;
-                @include ras(95%, 0.2rem);
-                background-color: rgb(59, 201, 201);
-                margin: 1rem auto;
             }
         }
     }
@@ -159,9 +187,9 @@ object {
     }
 }
 @media screen and(max-width:1050px) {
-  body{
-    object {
-        min-height: 141.3rem;
+    body {
+        object {
+            min-height: 141.3rem;
+        }
     }
-  }
 }

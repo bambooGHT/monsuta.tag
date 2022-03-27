@@ -80,9 +80,13 @@ object {
   display: flex;
   width: 100%;
   height: 4rem;
-  background-color: antiquewhite;
+  background: -o-linear-gradient(315deg, transparent 15px, #E7D6B6 20%) top left, -o-linear-gradient(225deg, transparent 15px, #E7D6B6 20%) top right, -o-linear-gradient(135deg, transparent 15px, #E7D6B6 20%) bottom right, -o-linear-gradient(45deg, transparent 15px, #E7D6B6 20%) bottom left;
+  background: linear-gradient(135deg, transparent 15px, #E7D6B6 20%) top left, linear-gradient(-135deg, transparent 15px, #E7D6B6 20%) top right, linear-gradient(-45deg, transparent 15px, #E7D6B6 20%) bottom right, linear-gradient(45deg, transparent 15px, #E7D6B6 20%) bottom left;
+  background-size: 51% 50%;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 999;
+  margin-bottom: 0.1rem;
 }
 
 .box .header .top .top-name {
@@ -92,7 +96,7 @@ object {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  padding: 1rem 1rem;
+  padding: 1rem 3rem;
 }
 
 .box .header .top .top-name:nth-child(3) {
@@ -100,11 +104,11 @@ object {
       -ms-flex: auto;
           flex: auto;
   text-align: right;
-  padding-right: 1rem;
+  padding-right: 3rem;
 }
 
 .box .header .top .top-name:nth-child(3) a {
-  color: #2f9271;
+  color: #d40000;
 }
 
 .box .header .cheack {
@@ -114,30 +118,55 @@ object {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  background-color: antiquewhite;
+  background: -o-radial-gradient(top left, circle, transparent 15px, #E7D6B6 0) top left, -o-radial-gradient(top right, circle, transparent 15px, #E7D6B6 0) top right, -o-radial-gradient(bottom right, circle, transparent 15px, #E7D6B6 0) bottom right, -o-radial-gradient(bottom left, circle, transparent 15px, #E7D6B6 0) bottom left;
+  background: radial-gradient(circle at top left, transparent 15px, #E7D6B6 0) top left, radial-gradient(circle at top right, transparent 15px, #E7D6B6 0) top right, radial-gradient(circle at bottom right, transparent 15px, #E7D6B6 0) bottom right, radial-gradient(circle at bottom left, transparent 15px, #E7D6B6 0) bottom left;
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 99;
-  -webkit-box-shadow: 0 0 1rem #464040;
-          box-shadow: 0 0 1rem #464040;
 }
 
 .box .header .cheack div {
   display: none;
+  margin-top: 1rem;
 }
 
 .box .header .cheack div label {
+  width: auto;
   display: block;
   font-size: 1.8rem;
   text-align: center;
   margin: 0.5rem 0;
 }
 
-.box .header .cheack i {
-  display: block;
-  width: 95%;
+.box .header .cheack div label span {
+  position: relative;
+  color: #333333;
+}
+
+.box .header .cheack div label span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   height: 0.2rem;
-  background-color: #3bc9c9;
-  margin: 1rem auto;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background: -webkit-gradient(linear, left top, right top, from(#ff0000), to(#00ff0d));
+  background: -o-linear-gradient(left, #ff0000, #00ff0d);
+  background: linear-gradient(90deg, #ff0000, #00ff0d);
+  background-size: 0 0.2rem;
+  background-repeat: no-repeat;
+  background-position: 50% bottom;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.box .header .cheack div label span:hover::before {
+  background-size: 100% 0.2rem;
 }
 
 @media screen and (max-width: 800px) {

@@ -546,7 +546,7 @@ html {
             grid-template-columns: repeat(auto-fill, 121px);
             @include ras(93.5%, 100%);
             .img {
-                @include ras(12rem, 100%);
+                @include ras(12.1rem, 100%);
                 @include taxian;
                 pointer-events: none;
                 border: none;
@@ -573,6 +573,7 @@ html {
                     align-items: center;
                     justify-content: center;
                     text-align: center;
+                    white-space:pre-line;
                 }
             }
             .L {

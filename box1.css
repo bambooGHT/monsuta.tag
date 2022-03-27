@@ -402,7 +402,7 @@ html {
 }
 
 .box .t2 section .img {
-  width: 12rem;
+  width: 12.1rem;
   height: 100%;
   pointer-events: none;
   border: none;
@@ -446,6 +446,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  white-space: pre-line;
 }
 
 .box .t2 section .L {

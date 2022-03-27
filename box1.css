@@ -330,7 +330,7 @@ html {
   margin: 0 auto;
   margin-top: 5rem;
   min-height: 8.7rem;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 0rem 0 1rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: justify;
@@ -399,6 +399,7 @@ html {
       grid-template-columns: repeat(auto-fill, 121px);
   width: 93.5%;
   height: 100%;
+  padding: 1rem 1rem 0 1rem;
 }
 
 .box .t2 section .img {

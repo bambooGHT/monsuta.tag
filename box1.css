@@ -336,8 +336,8 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-grid-columns: (70px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 70px);
+  -ms-grid-columns: (71px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 71px);
 }
 
 .box .td section * {
@@ -395,14 +395,14 @@ html {
 
 .box .t2 section {
   min-height: 1rem;
-  -ms-grid-columns: (130px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 130px);
-  width: 95%;
+  -ms-grid-columns: (121px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 121px);
+  width: 93.5%;
   height: 100%;
 }
 
 .box .t2 section .img {
-  width: 12.5rem;
+  width: 12rem;
   height: 100%;
   pointer-events: none;
   border: none;
@@ -423,24 +423,34 @@ html {
 }
 
 .box .t2 section .img .tc1 p {
-  color: #ff1717;
+  color: #037ac9;
   font-weight: bold;
 }
 
 .box .t2 section .img .tc2 {
   width: 100%;
-  height: 7rem;
+  height: 6.6rem;
   pointer-events: none;
   font-size: 1.4rem;
   color: #000000;
   pointer-events: none;
   border: 2px solid #ffaa00;
   margin-top: -0.2rem;
-  text-indent: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 .box .t2 section .L {
   font-weight: bold;
+  font-size: 1.9rem;
 }
 
 .box .t2 .t2-1 {

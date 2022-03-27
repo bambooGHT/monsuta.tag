@@ -500,7 +500,7 @@ html {
             padding: 1rem 1rem 0 1rem;
             display: grid;
             justify-content: space-between;
-            grid-template-columns: repeat(auto-fill, 70px);
+            grid-template-columns: repeat(auto-fill, 71px);
             .L {
                 @include ras(auto, 3rem);
                 position: absolute;
@@ -543,10 +543,10 @@ html {
     .t2 {
         section {
             min-height: 1rem;
-            grid-template-columns: repeat(auto-fill, 130px);
-            @include ras(95%, 100%);
+            grid-template-columns: repeat(auto-fill, 121px);
+            @include ras(93.5%, 100%);
             .img {
-                @include ras(12.5rem, 100%);
+                @include ras(12rem, 100%);
                 @include taxian;
                 pointer-events: none;
                 border: none;
@@ -555,26 +555,29 @@ html {
                     margin: 0 auto;
                     border: 2px solid #ffaa00;
                     pointer-events: auto;
-                    p{
-                        color: rgb(255, 23, 23);
+                    p {
+                        color: rgb(3, 122, 201);
                         font-weight: bold;
                     }
                 }
                 .tc2 {
                     width: 100%;
-                    height: 7rem;
+                    height: 6.6rem;
                     pointer-events: none;
                     font-size: 1.4rem;
                     color: #000000;
                     pointer-events: none;
                     border: 2px solid #ffaa00;
                     margin-top: -0.2rem;
-                    text-indent: 2rem;
-                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
                 }
             }
             .L {
                 font-weight: bold;
+                font-size: 1.9rem;
             }
         }
         .t2-1 {

@@ -40,6 +40,7 @@ html {
                     &:nth-child(1) {
                         .atb:nth-child(1) {
                             color: #fff;
+                            text-shadow: 0 0 0.5rem #000000;
                         }
                     }
                 }
@@ -359,8 +360,54 @@ html {
             }
         }
     }
+    #at1:checked ~ {
+        .t1 {
+            display: block;
+        }
+        .t2 {
+            display: none;
+        }
+        .box2 {
+            .attribute {
+                li {
+                    &:nth-child(1) {
+                        .at {
+                            color: rgb(255, 255, 255);
+                            text-shadow: 0 0 0.5rem #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #at2:checked ~ {
+        .t1 {
+            display: block;
+        }
+        .t1 {
+            display: none;
+        }
+        .box2 {
+            .attribute {
+                li {
+                    &:nth-child(1) {
+                        .at {
+                            color: rgb(0, 0, 0);
+                            text-shadow: none;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .at {
+                            color: rgb(255, 255, 255);
+                            text-shadow: 0 0 0.5rem #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .box1 {
-        @include ras(80%,100%);
+        @include ras(80%, 100%);
         margin: auto;
         margin-bottom: 2rem;
         text-align: center;
@@ -398,6 +445,12 @@ html {
                 display: block;
                 margin: 0 auto;
             }
+            .at1 {
+                &:nth-child(1) {
+                    color: #fff;
+                    text-shadow: 0 0 0.5rem #000000;
+                }
+            }
             li {
                 display: inline-block;
                 @include ras(11.5rem, auto);
@@ -425,6 +478,7 @@ html {
                     font-size: 1.8rem;
                     font-weight: bold;
                     letter-spacing: 0.1rem;
+                    user-select: none;
                 }
             }
         }
@@ -443,7 +497,7 @@ html {
             margin: 0 auto;
             margin-top: 5rem;
             min-height: 8.7rem;
-            padding: 1rem 0 0 1rem;
+            padding: 1rem 1rem 0 1rem;
             display: grid;
             justify-content: space-between;
             grid-template-columns: repeat(auto-fill, 70px);
@@ -484,6 +538,41 @@ html {
         }
         .td-4 {
             background-color: #9e8d75;
+        }
+    }
+    .t2 {
+        section {
+        min-height: 1rem;
+        grid-template-columns: repeat(auto-fill, 130px);
+            .img {
+                @include ras(13rem,100%);
+                @include taxian;
+                pointer-events: none;
+                border: none;
+                .tc1 {
+                    @include ras(6.4rem, 7.8rem);
+                    margin: 0 auto;
+                    border: 2px solid #ffd06f;
+                    pointer-events: auto;
+                }
+                .tc2 {
+                    width: 100%;
+                    height: 9rem;
+                    pointer-events: none;
+                    font-size: 1.4rem;
+                    color: #000000;
+                    pointer-events: none;
+                    border: 2px solid #ffd06f;
+                    margin-top: -0.2rem;
+                    text-indent: 2rem;
+                }
+            }
+            .L {
+                font-weight: bold;
+            }
+        }
+        .t2-1 {
+            background-color: #72bdeeaf;
         }
     }
 }

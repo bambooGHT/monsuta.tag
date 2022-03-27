@@ -4,18 +4,22 @@ html {
 
 .box {
   width: 80%;
-  height: 100vh;
+  height: auto;
   background: #ad8d40 url(http://www.transparenttextures.com/patterns/fake-luxury.png) fixed 50% 100%;
   margin: 0 auto;
-  min-height: 103rem;
-  overflow: hidden;
+}
+
+.box::before, .box::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .box .box1 {
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .box .box1 .top {
@@ -43,6 +47,8 @@ html {
   border: 4px solid #fafad2;
   margin-top: -0.2rem;
   background-color: #f3c07d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .box .box1 .tag .panel {
@@ -96,10 +102,14 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 0.4rem 0;
+  margin: 0 0.4rem 1rem;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
+}
+
+.box .box1 .tag .panel ul .lvb {
+  color: #e70505;
 }
 
 .box .box1 .tag .panel ul li {
@@ -117,17 +127,8 @@ html {
           box-sizing: border-box;
 }
 
-.box .box1 .tag .panel ul li:nth-child(1) {
-  border-bottom: 4px solid #8a8a8a;
-  font-weight: bold;
-}
-
 .box .box1 .tag .panel ul li:nth-child(even) {
-  background-color: #cec2c2;
-}
-
-.box .box1 .tag .panel ul li:nth-child(8) {
-  color: #b10202;
+  background-color: #999999;
 }
 
 .box .box1 .tag .panel ul li p {
@@ -158,15 +159,21 @@ html {
 
 .box .box1 .tag .pane2 {
   width: 98%;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
+  border: 4px solid #8a8a8a;
+  border-bottom: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 4px solid #8a8a8a;
-  border-bottom: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .box .box1 .tag .pane2 .pa-1 {
@@ -178,20 +185,12 @@ html {
 }
 
 .box .box1 .tag .pane2 ul {
-  width: 100%;
+  width: 24rem;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
 }
 
 .box .box1 .tag .pane2 ul li {
-  min-width: 8rem;
+  min-width: 24rem;
   font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,19 +201,6 @@ html {
   font-weight: bold;
 }
 
-.box .box1 .tag .pane2 ul li:nth-child(1) p:nth-child(4) {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-}
-
-.box .box1 .tag .pane2 ul li:nth-child(2) p:nth-child(4) {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  font-size: 1.3rem;
-}
-
 .box .box1 .tag .pane2 ul li p {
   min-width: 8rem;
   height: 2.5rem;
@@ -222,8 +208,28 @@ html {
   text-align: center;
 }
 
-.box .box1 .tag .pane2 ul li:nth-child(n + 7) {
-  display: none;
+.box .box1 .tag .pane2 .pa-2 {
+  width: 60%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.box .box1 .tag .pane2 .pa-2 p {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.box .box1 .tag .pane2 .pa-2 p:nth-child(1) {
+  font-weight: bold;
+}
+
+.box .box1 .tag .pane2 .pa-2 p:nth-child(2) {
+  font-size: 1.4rem;
 }
 
 .box .box1 .tag .pane3 {

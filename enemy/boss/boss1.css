@@ -1,11 +1,21 @@
 .box {
-  width: 95%;
+  width: 100%;
 }
 
 .box .box1 {
-  width: 95%;
+  width: 90%;
 }
 
-.box .box1 .tag .pane2 ul li:nth-child(n+7) {
-  display: block;
+.box .box1 .tag .pane2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box .box1 .tag .pane2 ul {
+  width: auto;
+}
+
+.box .box1 .tag .pane2 .pa-2 {
+  width: 100%;
 }

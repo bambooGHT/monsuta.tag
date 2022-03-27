@@ -2,44 +2,44 @@ html {
   font-size: 10px;
 }
 
+input {
+  display: none;
+}
+
+object {
+  display: none;
+  min-height: 101.3rem;
+}
+
+#boss1:checked ~ .box .boss1 object {
+  display: block;
+}
+
+#boss2:checked ~ .box .boss2 object {
+  display: block;
+}
+
+#boss3:checked ~ .box .boss3 object {
+  display: block;
+}
+
+#boss4:checked ~ .box .boss4 object {
+  display: block;
+}
+
+#boss5:checked ~ .box .boss5 object {
+  display: block;
+}
+
 .box {
   width: 100%;
   height: 100%;
 }
 
-.box input {
-  display: none;
-}
-
-.box object {
-  display: none;
-}
-
-.box #boss1:checked ~ .boss1 object {
-  display: block;
-}
-
-.box #boss2:checked ~ .boss2 object {
-  display: block;
-}
-
-.box #boss3:checked ~ .boss3 object {
-  display: block;
-}
-
-.box #boss4:checked ~ .boss4 object {
-  display: block;
-}
-
-.box #boss5:checked ~ .boss5 object {
-  display: block;
-}
-
 .box .header {
   width: 30%;
   height: 5rem;
-  margin: 0 auto;
-  margin-top: 1rem;
+  margin: 1rem auto;
 }
 
 .box .header::before, .box .header::after {
@@ -143,5 +143,11 @@ html {
 @media screen and (max-width: 800px) {
   .box .header {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  body object {
+    min-height: 141.3rem;
   }
 }

@@ -1,15 +1,15 @@
 .box {
-    width: 95%;
+    width: 100%;
     .box1 {
-        width: 95%;
-        .tag{
-            .pane2{
-                ul{
-                    li{
-                        &:nth-child(n+7){
-                            display: block;
-                        }
-                    }
+        width: 90%;
+        .tag {
+            .pane2 {
+                justify-content: center;
+                ul {
+                    width: auto;
+                }
+                .pa-2 {
+                    width: 100%;
                 }
             }
         }

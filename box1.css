@@ -20,6 +20,7 @@ html {
 
 .box #atb:checked ~ .box2 .attribute li:nth-child(1) .atb:nth-child(1), .box #atb:checked ~ .box3 .attribute li:nth-child(1) .atb:nth-child(1) {
   color: #fff;
+  text-shadow: 0 0 0.5rem #000000;
 }
 
 .box #atb1:checked ~ .td section .img {
@@ -191,6 +192,37 @@ html {
   text-shadow: 0 0 0.5rem #000000;
 }
 
+.box #at1:checked ~ .t1 {
+  display: block;
+}
+
+.box #at1:checked ~ .t2 {
+  display: none;
+}
+
+.box #at1:checked ~ .box2 .attribute li:nth-child(1) .at, .box #at1:checked ~ .box3 .attribute li:nth-child(1) .at {
+  color: white;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
+.box #at2:checked ~ .t1 {
+  display: block;
+}
+
+.box #at2:checked ~ .t1 {
+  display: none;
+}
+
+.box #at2:checked ~ .box2 .attribute li:nth-child(1) .at, .box #at2:checked ~ .box3 .attribute li:nth-child(1) .at {
+  color: black;
+  text-shadow: none;
+}
+
+.box #at2:checked ~ .box2 .attribute li:nth-child(2) .at, .box #at2:checked ~ .box3 .attribute li:nth-child(2) .at {
+  color: white;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
 .box .box1 {
   width: 80%;
   height: 100%;
@@ -243,6 +275,11 @@ html {
   margin: 0 auto;
 }
 
+.box .box2 .attribute .at1:nth-child(1), .box .box3 .attribute .at1:nth-child(1) {
+  color: #fff;
+  text-shadow: 0 0 0.5rem #000000;
+}
+
 .box .box2 .attribute li, .box .box3 .attribute li {
   display: inline-block;
   width: 11.5rem;
@@ -275,6 +312,10 @@ html {
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .box .td {
@@ -289,7 +330,7 @@ html {
   margin: 0 auto;
   margin-top: 5rem;
   min-height: 8.7rem;
-  padding: 1rem 0 0 1rem;
+  padding: 1rem 1rem 0 1rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: justify;
@@ -350,4 +391,51 @@ html {
 
 .box .td .td-4 {
   background-color: #9e8d75;
+}
+
+.box .t2 section {
+  min-height: 1rem;
+  -ms-grid-columns: (130px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 130px);
+}
+
+.box .t2 section .img {
+  width: 13rem;
+  height: 100%;
+  pointer-events: none;
+  border: none;
+}
+
+.box .t2 section .img::before, .box .t2 section .img::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.box .t2 section .img .tc1 {
+  width: 6.4rem;
+  height: 7.8rem;
+  margin: 0 auto;
+  border: 2px solid #ffd06f;
+  pointer-events: auto;
+}
+
+.box .t2 section .img .tc2 {
+  width: 100%;
+  height: 9rem;
+  pointer-events: none;
+  font-size: 1.4rem;
+  color: #000000;
+  pointer-events: none;
+  border: 2px solid #ffd06f;
+  margin-top: -0.2rem;
+  text-indent: 2rem;
+}
+
+.box .t2 section .L {
+  font-weight: bold;
+}
+
+.box .t2 .t2-1 {
+  background-color: #72bdeeaf;
 }

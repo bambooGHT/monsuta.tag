@@ -13,64 +13,21 @@ html {
         clear: both;
     }
 }
-input {
-    display: none;
-}
-object {
-    display: none;
-    min-height: 103.5rem;
-}
-#boss1:checked ~ {
-    .box {
-        .boss1 {
-            object {
-                display: block;
-            }
-        }
-    }
-}
-#boss2:checked ~ {
-    .box {
-        .boss2 {
-            object {
-                display: block;
-            }
-        }
-    }
-}
-#boss3:checked ~ {
-    .box {
-        .boss3 {
-            object {
-                display: block;
-            }
-        }
-    }
-}
-#boss4:checked ~ {
-    .box {
-        .boss4 {
-            object {
-                display: block;
-            }
-        }
-    }
-}
-#boss5:checked ~ {
-    .box {
-        .boss5 {
-            object {
-                display: block;
-            }
-        }
-    }
-}
 .box {
     @include ras();
+    input{
+        display: none;
+    }
     .header {
-        @include ras(30%, 5rem);
+        @include ras(40%, 5rem);
         margin: 1rem auto;
         @include taxian;
+        position: absolute;
+        top: -25%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
         #a:checked ~ {
             .top {
                 .top-name {
@@ -106,10 +63,10 @@ object {
         .top {
             display: flex;
             @include ras(100%, 4rem);
-            background: linear-gradient(135deg, transparent 15px, #E7D6B6 20%) top left,
-                linear-gradient(-135deg, transparent 15px, #E7D6B6 20%) top right,
-                linear-gradient(-45deg, transparent 15px, #E7D6B6 20%) bottom right,
-                linear-gradient(45deg, transparent 15px, #E7D6B6 20%) bottom left;
+            background: linear-gradient(135deg, transparent 1.5rem, #E7D6B6 15%) top left,
+                linear-gradient(-135deg, transparent 1.5rem, #E7D6B6 15%) top right,
+                linear-gradient(-45deg, transparent 1.5rem, #E7D6B6 15%) bottom right,
+                linear-gradient(45deg, transparent 1.5rem, #E7D6B6 15%) bottom left;
             background-size: 51% 50%;
             background-repeat: no-repeat;
             position: relative;
@@ -119,11 +76,14 @@ object {
                 @include ras(4rem, 2rem);
                 font: bold 2rem/2rem Microsoft YaHei UI Light;
                 flex: none;
-                padding: 1rem 3rem;
+                padding: 1rem 2rem;
+                &:nth-child(1) {
+                    margin-left: 4%;
+                }
                 &:nth-child(3) {
                     flex: auto;
                     text-align: right;
-                    padding-right: 3rem;
+                    margin-right: 5%;
                     a {
                         color: rgb(212, 0, 0);
                     }
@@ -134,10 +94,10 @@ object {
             overflow: hidden;
             @include ras(100%, 0);
             transition: 0.5s;
-            background: radial-gradient(circle at top left, transparent 15px, #E7D6B6 0) top left,
-                radial-gradient(circle at top right, transparent 15px, #E7D6B6 0) top right,
-                radial-gradient(circle at bottom right, transparent 15px, #E7D6B6 0) bottom right,
-                radial-gradient(circle at bottom left, transparent 15px, #E7D6B6 0) bottom left;
+            background: radial-gradient(circle at top left, transparent 1.5rem, #E7D6B6 0) top left,
+                radial-gradient(circle at top right, transparent 1.5rem, #E7D6B6 0) top right,
+                radial-gradient(circle at bottom right, transparent 1.5rem, #E7D6B6 0) bottom right,
+                radial-gradient(circle at bottom left, transparent 1.5rem, #E7D6B6 0) bottom left;
             background-size: 51% 51%;
             background-repeat: no-repeat;
             position: relative;
@@ -145,7 +105,7 @@ object {
             div {
                 display: none;
                 margin-top: 1rem;
-                label {
+                a {
                     width: auto;
                     display: block;
                     font-size: 1.8rem;
@@ -183,13 +143,6 @@ object {
     .box {
         .header {
             width: 80%;
-        }
-    }
-}
-@media screen and(max-width:1050px) {
-    body {
-        object {
-            min-height: 141.3rem;
         }
     }
 }

@@ -2,11 +2,16 @@ html {
   font-size: 10px;
 }
 
-.box {
-  width: 80%;
-  height: auto;
+body {
   background: #ad8d40 url(http://www.transparenttextures.com/patterns/fake-luxury.png) fixed 50% 100%;
-  margin: 0 auto;
+}
+
+.box {
+  width: 75%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 2%;
 }
 
 .box::before, .box::after {
@@ -19,7 +24,6 @@ html {
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  padding-bottom: 2rem;
 }
 
 .box .box1 .top {
@@ -30,6 +34,8 @@ html {
   z-index: 99;
   overflow: hidden;
   border-radius: 2.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .box .box1 .top img {
@@ -49,6 +55,153 @@ html {
   background-color: #f3c07d;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
+}
+
+.box .box1 .tag .img {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #f3c07d;
+  border-radius: 50%;
+  z-index: 9999;
+  right: 0;
+  top: -5rem;
+}
+
+.box .box1 .tag .img span {
+  position: absolute;
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #c50000;
+  border-radius: 2rem;
+  left: 0.5rem;
+}
+
+.box .box1 .tag .img span:nth-child(1) {
+  top: calc(50%);
+  -webkit-transform: rotateZ(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotateZ(45deg);
+}
+
+.box .box1 .tag .img span:nth-child(2) {
+  top: calc(50%);
+  -webkit-transform: rotateZ(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+.box .box1 .tag input {
+  display: none;
+}
+
+.box .box1 .tag #lv1:checked ~ .panel ul li .lv1 span {
+  -webkit-transform: rotateZ(3.142rad);
+      -ms-transform: rotate(3.142rad);
+          transform: rotateZ(3.142rad);
+}
+
+.box .box1 .tag #lv1:checked ~ .panel ul .lvb1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box .box1 .tag #lv2:checked ~ .panel ul li .lv2 span {
+  -webkit-transform: rotateZ(3.142rad);
+      -ms-transform: rotate(3.142rad);
+          transform: rotateZ(3.142rad);
+}
+
+.box .box1 .tag #lv2:checked ~ .panel ul .lvb2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box .box1 .tag #lv7:checked ~ .panel ul li .lv7 span {
+  -webkit-transform: rotateZ(3.142rad);
+      -ms-transform: rotate(3.142rad);
+          transform: rotateZ(3.142rad);
+}
+
+.box .box1 .tag #lv7:checked ~ .panel ul .lvb7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box .box1 .tag #lv3:checked ~ .pane2 ul li .lv3 span {
+  -webkit-transform: rotateZ(3.142rad);
+      -ms-transform: rotate(3.142rad);
+          transform: rotateZ(3.142rad);
+}
+
+.box .box1 .tag #lv3:checked ~ .pane2 ul .lvb3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box .box1 .tag #lv4:checked ~ .pane2 ul li .lv4 span {
+  -webkit-transform: rotateZ(3.142rad);
+      -ms-transform: rotate(3.142rad);
+          transform: rotateZ(3.142rad);
+}
+
+.box .box1 .tag #lv4:checked ~ .pane2 ul .lvb4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box .box1 .tag #lv5:checked ~ .pane2 ul li .lv5 span {
+  -webkit-transform: rotateZ(3.142rad);
+      -ms-transform: rotate(3.142rad);
+          transform: rotateZ(3.142rad);
+}
+
+.box .box1 .tag #lv5:checked ~ .pane2 ul .lvb5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box .box1 .tag #lv6:checked ~ .pane2 ul li .lv6 span {
+  -webkit-transform: rotateZ(3.142rad);
+      -ms-transform: rotate(3.142rad);
+          transform: rotateZ(3.142rad);
+}
+
+.box .box1 .tag #lv6:checked ~ .pane2 ul .lvb6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box .box1 .tag #lv8:checked ~ .pane2 ul li .lv8 span {
+  -webkit-transform: rotateZ(3.142rad);
+      -ms-transform: rotate(3.142rad);
+          transform: rotateZ(3.142rad);
+}
+
+.box .box1 .tag #lv8:checked ~ .pane2 ul .lvb8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box .box1 .tag #lv9:checked ~ .pane2 ul li .lv9 span {
+  -webkit-transform: rotateZ(3.142rad);
+      -ms-transform: rotate(3.142rad);
+          transform: rotateZ(3.142rad);
+}
+
+.box .box1 .tag #lv9:checked ~ .pane2 ul .lvb9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .box .box1 .tag .panel {
@@ -108,8 +261,22 @@ html {
           order: 3;
 }
 
-.box .box1 .tag .panel ul .lvb {
+.box .box1 .tag .panel ul li {
+  position: relative;
+}
+
+.box .box1 .tag .panel ul li span {
+  display: inline-block;
+  font-size: 2rem;
+  position: absolute;
+}
+
+.box .box1 .tag .panel ul .lvb1,
+.box .box1 .tag .panel ul .lvb2,
+.box .box1 .tag .panel ul .lvb7 {
   color: #e70505;
+  display: none;
+  background-color: #b6b07e;
 }
 
 .box .box1 .tag .panel ul li {
@@ -127,12 +294,8 @@ html {
           box-sizing: border-box;
 }
 
-.box .box1 .tag .panel ul li:nth-child(even) {
-  background-color: #999999;
-}
-
 .box .box1 .tag .panel ul li p {
-  min-width: 8rem;
+  width: 7rem;
   font-size: 1.7rem;
   text-align: center;
 }
@@ -184,6 +347,17 @@ html {
   border-bottom: none;
 }
 
+.box .box1 .tag .pane2 .lvb3,
+.box .box1 .tag .pane2 .lvb4,
+.box .box1 .tag .pane2 .lvb5,
+.box .box1 .tag .pane2 .lvb6,
+.box .box1 .tag .pane2 .lvb8,
+.box .box1 .tag .pane2 .lvb9 {
+  color: #e70505;
+  display: none;
+  background-color: #b6b07e;
+}
+
 .box .box1 .tag .pane2 ul {
   width: 24rem;
   height: 100%;
@@ -206,6 +380,16 @@ html {
   height: 2.5rem;
   line-height: 2.5rem;
   text-align: center;
+}
+
+.box .box1 .tag .pane2 ul li {
+  position: relative;
+}
+
+.box .box1 .tag .pane2 ul li span {
+  display: inline-block;
+  font-size: 2rem;
+  position: absolute;
 }
 
 .box .box1 .tag .pane2 .pa-2 {

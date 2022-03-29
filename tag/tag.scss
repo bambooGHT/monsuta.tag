@@ -20,8 +20,9 @@ body {
     background: #ffd87d url(http://www.transparenttextures.com/patterns/fake-luxury.png) fixed 50% 100%;
 }
 .box {
-    @include ras(100%, 100%);
-
+    @include ras(100%, 100vh);
+    display: flex;
+    align-items: center;
     input {
         display: none;
     }
@@ -298,16 +299,16 @@ body {
         }
     }
     .td2 {
-        @include ras(90%, 100%);
+        @include ras(90%, auto);
         display: flex;
         justify-content: center;
         margin: auto;
-        margin-top: 5%;
+        padding: 2rem 0;
         .td2-1 {
             * {
                 cursor: default;
             }
-            @include ras(75rem, 100%);
+            @include ras(80rem, 100%);
             flex-wrap: wrap;
             border: 3px solid rgb(217, 255, 0);
             box-shadow: 0 0 2rem rgba(0, 0, 0, 0.6);
@@ -323,7 +324,7 @@ body {
                 right: 50%;
                 top: auto;
                 margin-top: 5rem;
-                margin-right: 48.8rem;
+                margin-right: 51rem;
                 span {
                     display: block;
                     width: 0.2rem;
@@ -360,7 +361,7 @@ body {
                 z-index: 9999;
                 right: 50%;
                 top: auto;
-                margin-right: 48.8rem;
+                margin-right: 51rem;
                 span {
                     position: absolute;
                     width: 3rem;

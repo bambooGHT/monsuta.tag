@@ -4,13 +4,13 @@
 }
 
 .box .td2 .td2-1 {
-  width: 70%;
+  width: 75%;
   height: 100%;
 }
 
 .box .td2 .td2-1 .cn {
   position: fixed;
-  right: 83%;
+  right: 84.8%;
   left: auto;
   top: auto;
   margin-top: 5rem;
@@ -19,7 +19,7 @@
 
 .box .td2 .td2-1 .img {
   position: fixed;
-  right: 83%;
+  right: 84.8%;
   left: auto;
   top: auto;
   margin-right: auto;
@@ -71,6 +71,7 @@
 
 .box .td2 .td2-1 .t3 .tile-1 li:nth-child(n + 2) {
   width: 33.3%;
+  margin: 0 auto;
 }
 
 .box .td2 .td2-2 {

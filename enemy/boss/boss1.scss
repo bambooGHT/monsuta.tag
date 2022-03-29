@@ -1,8 +1,13 @@
 .box {
-    width: 100%;
+    width: 98%;
     .box1 {
-        width: 90%;
+        width: 100%;
         .tag {
+            .panel{
+                ul{
+                    margin: 0;
+                }
+            }
             .pane2 {
                 justify-content: center;
                 ul {

@@ -6,10 +6,10 @@
     .td2 {
         flex-wrap: wrap;
         .td2-1 {
-            @include ras(70%, 100%);
+            @include ras(75%, 100%);
             .cn {
                 position: fixed;
-                right: 83%;
+                right: 84.8%;
                 left: auto;
                 top: auto;
                 margin-top: 5rem;
@@ -17,7 +17,7 @@
             }
             .img {
                 position: fixed;
-                right: 83%;
+                right: 84.8%;
                 left: auto;
                 top: auto;
                 margin-right: auto;
@@ -72,6 +72,7 @@
                     li {
                         &:nth-child(n + 2) {
                             width: 33.3%;
+                            margin: 0 auto;
                         }
                     }
                 }
@@ -87,8 +88,8 @@
         .td2 {
             .td2-1 {
                 .t3 {
-                    .kurasu{
-                        .te3{
+                    .kurasu {
+                        .te3 {
                             display: block;
                         }
                     }
@@ -99,7 +100,7 @@
                             }
                         }
                     }
-                    .up{
+                    .up {
                         li {
                             &:nth-child(n + 1) {
                                 width: 100%;

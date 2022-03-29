@@ -3,13 +3,13 @@
     height: $b;
 }
 body{
-    min-width: 50rem;
+    min-width: 39.3rem;
 }
 .box {
     .box1 {
-        @include ras(50rem, 27.4rem);
+        @include ras(39.3rem, 21.6rem);
         .back {
-            @include ras(199.6rem, 27.4rem);
+            @include ras(157.5rem, 21.6rem);
         }
     }
     section {

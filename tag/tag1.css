@@ -3,18 +3,13 @@ html {
 }
 
 .box .td2 {
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
-  padding: 2rem 0;
 }
 
 .box .td2 .td2-1 {
-  width: 55%;
+  width: 65%;
   height: 100%;
 }
 
@@ -61,7 +56,11 @@ html {
 }
 
 .box .td2 .td2-1 .t .t2 ul li span:nth-child(1) {
-  width: 25%;
+  width: 51%;
+}
+
+.box .td2 .td2-1 .t .t2 ul li span:nth-child(2) {
+  width: 48%;
 }
 
 .box .td2 .td2-1 .t .t2 ul li p {

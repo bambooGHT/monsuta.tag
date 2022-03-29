@@ -7,14 +7,9 @@ html {
 }
 .box {
     .td2 {
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
         transform: none;
-        padding: 2rem 0;
         .td2-1 {
-            @include ras(55%, 100%);
+            @include ras(65%, 100%);
             .cn{
                 position: absolute;
                 right: 0;
@@ -45,7 +40,10 @@ html {
                             span {
                                 font-size: 1.6rem;
                                 &:nth-child(1) {
-                                    width: 25%;
+                                    width: 51%;
+                                }
+                                &:nth-child(2) {
+                                    width: 48%;
                                 }
                             }
                             p {

@@ -2,44 +2,25 @@ html {
   font-size: 10px;
 }
 
-input {
-  display: none;
-}
-
-object {
-  display: none;
-  min-height: 103.5rem;
-}
-
-#boss1:checked ~ .box .boss1 object {
-  display: block;
-}
-
-#boss2:checked ~ .box .boss2 object {
-  display: block;
-}
-
-#boss3:checked ~ .box .boss3 object {
-  display: block;
-}
-
-#boss4:checked ~ .box .boss4 object {
-  display: block;
-}
-
-#boss5:checked ~ .box .boss5 object {
-  display: block;
-}
-
 .box {
   width: 100%;
   height: 100%;
 }
 
+.box input {
+  display: none;
+}
+
 .box .header {
-  width: 30%;
+  width: 40%;
   height: 5rem;
   margin: 1rem auto;
+  position: absolute;
+  top: -25%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .box .header::before, .box .header::after {
@@ -80,8 +61,8 @@ object {
   display: flex;
   width: 100%;
   height: 4rem;
-  background: -o-linear-gradient(315deg, transparent 15px, #E7D6B6 20%) top left, -o-linear-gradient(225deg, transparent 15px, #E7D6B6 20%) top right, -o-linear-gradient(135deg, transparent 15px, #E7D6B6 20%) bottom right, -o-linear-gradient(45deg, transparent 15px, #E7D6B6 20%) bottom left;
-  background: linear-gradient(135deg, transparent 15px, #E7D6B6 20%) top left, linear-gradient(-135deg, transparent 15px, #E7D6B6 20%) top right, linear-gradient(-45deg, transparent 15px, #E7D6B6 20%) bottom right, linear-gradient(45deg, transparent 15px, #E7D6B6 20%) bottom left;
+  background: -o-linear-gradient(315deg, transparent 1.5rem, #E7D6B6 15%) top left, -o-linear-gradient(225deg, transparent 1.5rem, #E7D6B6 15%) top right, -o-linear-gradient(135deg, transparent 1.5rem, #E7D6B6 15%) bottom right, -o-linear-gradient(45deg, transparent 1.5rem, #E7D6B6 15%) bottom left;
+  background: linear-gradient(135deg, transparent 1.5rem, #E7D6B6 15%) top left, linear-gradient(-135deg, transparent 1.5rem, #E7D6B6 15%) top right, linear-gradient(-45deg, transparent 1.5rem, #E7D6B6 15%) bottom right, linear-gradient(45deg, transparent 1.5rem, #E7D6B6 15%) bottom left;
   background-size: 51% 50%;
   background-repeat: no-repeat;
   position: relative;
@@ -96,7 +77,11 @@ object {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
+}
+
+.box .header .top .top-name:nth-child(1) {
+  margin-left: 4%;
 }
 
 .box .header .top .top-name:nth-child(3) {
@@ -104,7 +89,7 @@ object {
       -ms-flex: auto;
           flex: auto;
   text-align: right;
-  padding-right: 3rem;
+  margin-right: 5%;
 }
 
 .box .header .top .top-name:nth-child(3) a {
@@ -118,8 +103,8 @@ object {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  background: -o-radial-gradient(top left, circle, transparent 15px, #E7D6B6 0) top left, -o-radial-gradient(top right, circle, transparent 15px, #E7D6B6 0) top right, -o-radial-gradient(bottom right, circle, transparent 15px, #E7D6B6 0) bottom right, -o-radial-gradient(bottom left, circle, transparent 15px, #E7D6B6 0) bottom left;
-  background: radial-gradient(circle at top left, transparent 15px, #E7D6B6 0) top left, radial-gradient(circle at top right, transparent 15px, #E7D6B6 0) top right, radial-gradient(circle at bottom right, transparent 15px, #E7D6B6 0) bottom right, radial-gradient(circle at bottom left, transparent 15px, #E7D6B6 0) bottom left;
+  background: -o-radial-gradient(top left, circle, transparent 1.5rem, #E7D6B6 0) top left, -o-radial-gradient(top right, circle, transparent 1.5rem, #E7D6B6 0) top right, -o-radial-gradient(bottom right, circle, transparent 1.5rem, #E7D6B6 0) bottom right, -o-radial-gradient(bottom left, circle, transparent 1.5rem, #E7D6B6 0) bottom left;
+  background: radial-gradient(circle at top left, transparent 1.5rem, #E7D6B6 0) top left, radial-gradient(circle at top right, transparent 1.5rem, #E7D6B6 0) top right, radial-gradient(circle at bottom right, transparent 1.5rem, #E7D6B6 0) bottom right, radial-gradient(circle at bottom left, transparent 1.5rem, #E7D6B6 0) bottom left;
   background-size: 51% 51%;
   background-repeat: no-repeat;
   position: relative;
@@ -131,7 +116,7 @@ object {
   margin-top: 1rem;
 }
 
-.box .header .cheack div label {
+.box .header .cheack div a {
   width: auto;
   display: block;
   font-size: 1.8rem;
@@ -139,12 +124,12 @@ object {
   margin: 0.5rem 0;
 }
 
-.box .header .cheack div label span {
+.box .header .cheack div a span {
   position: relative;
   color: #333333;
 }
 
-.box .header .cheack div label span::before {
+.box .header .cheack div a span::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -165,18 +150,12 @@ object {
   transition: 0.5s all;
 }
 
-.box .header .cheack div label span:hover::before {
+.box .header .cheack div a span:hover::before {
   background-size: 100% 0.2rem;
 }
 
 @media screen and (max-width: 800px) {
   .box .header {
     width: 80%;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  body object {
-    min-height: 141.3rem;
   }
 }

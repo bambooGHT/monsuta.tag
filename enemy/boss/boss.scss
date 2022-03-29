@@ -13,15 +13,18 @@ html {
         clear: both;
     }
 }
-.box {
-    @include ras(80%, auto);
+body {
     background: #ad8d40 url(http://www.transparenttextures.com/patterns/fake-luxury.png) fixed 50% 100%;
-    margin: 0 auto;
+}
+.box {
+    @include ras(75%, 100%);
+    margin: auto;
     @include taxian();
+    margin-bottom: 1rem;
+    margin-top: 2%;
     .box1 {
         @include ras(80%, 100%);
         margin: 0 auto;
-        padding-bottom: 2rem;
         .top {
             @include ras(9rem, 9rem);
             border: 4px solid #fafad2;
@@ -29,6 +32,7 @@ html {
             z-index: 99;
             overflow: hidden;
             border-radius: 2.5rem;
+            box-sizing: border-box;
             img {
                 @include ras(100%, auto);
                 vertical-align: top;
@@ -42,6 +46,180 @@ html {
             margin-top: -0.2rem;
             background-color: #f3c07d;
             box-sizing: border-box;
+            position: relative;
+            .img {
+                position: absolute;
+                width: 4rem;
+                height: 4rem;
+                border: 2px solid #f3c07d;
+                border-radius: 50%;
+                z-index: 9999;
+                right: 0;
+                top: -5rem;
+                span {
+                    position: absolute;
+                    width: 3rem;
+                    height: 0.2rem;
+                    background-color: rgb(197, 0, 0);
+                    border-radius: 2rem;
+                    left: 0.5rem;
+                    &:nth-child(1) {
+                        top: calc(50%);
+                        transform: rotateZ(45deg);
+                    }
+                    &:nth-child(2) {
+                        top: calc(50%);
+                        transform: rotateZ(-45deg);
+                    }
+                }
+            }
+            input {
+                display: none;
+            }
+            #lv1:checked ~ {
+                .panel {
+                    ul {
+                        li {
+                            .lv1 {
+                                span {
+                                    transform: rotateZ(3.142rad);
+                                }
+                            }
+                        }
+                        .lvb1 {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            #lv2:checked ~ {
+                .panel {
+                    ul {
+                        li {
+                            .lv2 {
+                                span {
+                                    transform: rotateZ(3.142rad);
+                                }
+                            }
+                        }
+                        .lvb2 {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            #lv7:checked ~ {
+                .panel {
+                    ul {
+                        li {
+                            .lv7 {
+                                span {
+                                    transform: rotateZ(3.142rad);
+                                }
+                            }
+                        }
+                        .lvb7 {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            #lv3:checked ~ {
+                .pane2 {
+                    ul {
+                        li {
+                            .lv3 {
+                                span {
+                                    transform: rotateZ(3.142rad);
+                                }
+                            }
+                        }
+                        .lvb3 {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            #lv4:checked ~ {
+                .pane2 {
+                    ul {
+                        li {
+                            .lv4 {
+                                span {
+                                    transform: rotateZ(3.142rad);
+                                }
+                            }
+                        }
+                        .lvb4 {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            #lv5:checked ~ {
+                .pane2 {
+                    ul {
+                        li {
+                            .lv5 {
+                                span {
+                                    transform: rotateZ(3.142rad);
+                                }
+                            }
+                        }
+                        .lvb5 {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            #lv6:checked ~ {
+                .pane2 {
+                    ul {
+                        li {
+                            .lv6 {
+                                span {
+                                    transform: rotateZ(3.142rad);
+                                }
+                            }
+                        }
+                        .lvb6 {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            #lv8:checked ~ {
+                .pane2 {
+                    ul {
+                        li {
+                            .lv8 {
+                                span {
+                                    transform: rotateZ(3.142rad);
+                                }
+                            }
+                        }
+                        .lvb8 {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            #lv9:checked ~ {
+                .pane2 {
+                    ul {
+                        li {
+                            .lv9 {
+                                span {
+                                    transform: rotateZ(3.142rad);
+                                }
+                            }
+                        }
+                        .lvb9 {
+                            display: flex;
+                        }
+                    }
+                }
+            }
             .panel {
                 @include ras(100%, auto);
                 @include taxian;
@@ -66,8 +244,20 @@ html {
                     flex-direction: column;
                     margin: 0 0.4rem 1rem;
                     order: 3;
-                    .lvb{
+                    li {
+                        position: relative;
+                        span {
+                            display: inline-block;
+                            font-size: 2rem;
+                            position: absolute;
+                        }
+                    }
+                    .lvb1,
+                    .lvb2,
+                    .lvb7 {
                         color: rgb(231, 5, 5);
+                        display: none;
+                        background-color: #b6b07e;
                     }
                     li {
                         display: flex;
@@ -76,11 +266,8 @@ html {
                         font-size: 1.5rem;
                         line-height: 2.5rem;
                         box-sizing: border-box;
-                        &:nth-child(even) {
-                            background-color: #999999;
-                        }
                         p {
-                            min-width: 8rem;
+                            width: 7rem;
                             font-size: 1.7rem;
                             text-align: center;
                         }
@@ -116,6 +303,16 @@ html {
                     font-size: 1.8rem;
                     border-bottom: none;
                 }
+                .lvb3,
+                .lvb4,
+                .lvb5,
+                .lvb6,
+                .lvb8,
+                .lvb9 {
+                    color: rgb(231, 5, 5);
+                    display: none;
+                    background-color: #b6b07e;
+                }
                 ul {
                     @include ras(24rem, 100%);
                     li {
@@ -130,6 +327,14 @@ html {
                             height: 2.5rem;
                             line-height: 2.5rem;
                             text-align: center;
+                        }
+                    }
+                    li {
+                        position: relative;
+                        span {
+                            display: inline-block;
+                            font-size: 2rem;
+                            position: absolute;
                         }
                     }
                 }

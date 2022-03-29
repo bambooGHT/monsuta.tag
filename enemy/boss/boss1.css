@@ -1,9 +1,13 @@
 .box {
-  width: 100%;
+  width: 98%;
 }
 
 .box .box1 {
-  width: 90%;
+  width: 100%;
+}
+
+.box .box1 .tag .panel ul {
+  margin: 0;
 }
 
 .box .box1 .tag .pane2 {

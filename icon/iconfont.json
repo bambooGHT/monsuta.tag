@@ -1,0 +1,16 @@
+{
+  "id": "2962249",
+  "name": "RAS",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5387576",
+      "name": "箭头_列表展开",
+      "font_class": "jiantou_liebiaozhankai",
+      "unicode": "eb04",
+      "unicode_decimal": 60164
+    }
+  ]
+}

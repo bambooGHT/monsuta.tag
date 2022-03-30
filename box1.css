@@ -2,15 +2,31 @@ html {
   font-size: 10px;
 }
 
-html::-webkit-scrollbar {
-  display: none;
+body {
+  font-size: 10px;
+  background: url(bg0.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
 }
 
 .box {
-  width: 100%;
+  width: 100% auto;
   height: 100%;
-  margin: 1rem auto;
-  margin-top: 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 3%;
 }
 
 .box input {
@@ -27,11 +43,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 0.5rem #000000;
 }
 
-.box #atb1:checked ~ .td section .img {
+.box #atb1:checked ~ .td section .img,
+.box #atb1:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb1:checked ~ .td section .fire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb1:checked ~ .td section .fire1 {
   display: block;
 }
 
@@ -40,11 +63,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 1rem #ff4000;
 }
 
-.box #atb2:checked ~ .td section .img {
+.box #atb2:checked ~ .td section .img,
+.box #atb2:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb2:checked ~ .td section .water {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb2:checked ~ .td section .water1 {
   display: block;
 }
 
@@ -53,11 +83,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 1rem #00aaff;
 }
 
-.box #atb3:checked ~ .td section .img {
+.box #atb3:checked ~ .td section .img,
+.box #atb3:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb3:checked ~ .td section .land {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb3:checked ~ .td section .land1 {
   display: block;
 }
 
@@ -66,11 +103,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 1rem #99511e;
 }
 
-.box #atb4:checked ~ .td section .img {
+.box #atb4:checked ~ .td section .img,
+.box #atb4:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb4:checked ~ .td section .wind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb4:checked ~ .td section .wind1 {
   display: block;
 }
 
@@ -79,11 +123,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 1rem #15ff00;
 }
 
-.box #atb5:checked ~ .td section .img {
+.box #atb5:checked ~ .td section .img,
+.box #atb5:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb5:checked ~ .td section .Light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb5:checked ~ .td section .Light1 {
   display: block;
 }
 
@@ -92,11 +143,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 1rem #f7ea00;
 }
 
-.box #atb6:checked ~ .td section .img {
+.box #atb6:checked ~ .td section .img,
+.box #atb6:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb6:checked ~ .td section .dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb6:checked ~ .td section .dark1 {
   display: block;
 }
 
@@ -105,11 +163,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 1rem #5100ff;
 }
 
-.box #atb7:checked ~ .td section .img {
+.box #atb7:checked ~ .td section .img,
+.box #atb7:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb7:checked ~ .td section .Warrior {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb7:checked ~ .td section .Warrior1 {
   display: block;
 }
 
@@ -118,11 +183,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 0.5rem #000000;
 }
 
-.box #atb8:checked ~ .td section .img {
+.box #atb8:checked ~ .td section .img,
+.box #atb8:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb8:checked ~ .td section .guard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb8:checked ~ .td section .guard1 {
   display: block;
 }
 
@@ -131,11 +203,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 0.5rem #000000;
 }
 
-.box #atb9:checked ~ .td section .img {
+.box #atb9:checked ~ .td section .img,
+.box #atb9:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb9:checked ~ .td section .Sniper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb9:checked ~ .td section .Sniper1 {
   display: block;
 }
 
@@ -144,11 +223,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 0.5rem #000000;
 }
 
-.box #atb10:checked ~ .td section .img {
+.box #atb10:checked ~ .td section .img,
+.box #atb10:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb10:checked ~ .td section .Sorcerer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb10:checked ~ .td section .Sorcerer1 {
   display: block;
 }
 
@@ -157,11 +243,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 0.5rem #000000;
 }
 
-.box #atb11:checked ~ .td section .img {
+.box #atb11:checked ~ .td section .img,
+.box #atb11:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb11:checked ~ .td section .Healer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb11:checked ~ .td section .Healer1 {
   display: block;
 }
 
@@ -170,11 +263,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 0.5rem #000000;
 }
 
-.box #atb12:checked ~ .td section .img {
+.box #atb12:checked ~ .td section .img,
+.box #atb12:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb12:checked ~ .td section .assassin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb12:checked ~ .td section .assassin1 {
   display: block;
 }
 
@@ -183,11 +283,18 @@ html::-webkit-scrollbar {
   text-shadow: 0 0 0.5rem #000000;
 }
 
-.box #atb13:checked ~ .td section .img {
+.box #atb13:checked ~ .td section .img,
+.box #atb13:checked ~ .td section .tc1 {
   display: none;
 }
 
 .box #atb13:checked ~ .td section .sup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb13:checked ~ .td section .sup1 {
   display: block;
 }
 
@@ -229,21 +336,35 @@ html::-webkit-scrollbar {
 
 .box .box1 {
   width: 80%;
-  height: 100%;
+  height: auto;
   margin: auto;
-  margin-bottom: 2rem;
   text-align: center;
+}
+
+.box .box1 p {
+  width: 11.5rem;
+  height: 3.1rem;
+  background: url(1.png) no-repeat, url(3.png) no-repeat right, url(2.png);
+  background-size: auto 100%;
+  margin: 0 auto;
 }
 
 .box .box1 p a {
   font-size: 2rem;
   color: #000000;
-  text-shadow: 0.1rem 0.1rem 1rem black;
+  font-weight: bold;
 }
 
 .box .box2, .box .box3 {
   width: auto;
-  height: 100%;
+  height: auto;
+}
+
+.box .box2 *, .box .box3 * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .box .box2 .attribute, .box .box3 .attribute {
@@ -293,24 +414,35 @@ html::-webkit-scrollbar {
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
+}
+
+.box .box2 .attribute li label span, .box .box3 .attribute li label span {
+  width: 4rem;
+  height: 3.1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 
+.box .box2 .attribute li label span img, .box .box3 .attribute li label span img {
+  width: auto;
+  height: 3.1rem;
+  vertical-align: top;
+  image-rendering: -webkit-optimize-contrast;
+}
+
 .box .td {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .box .td section {
   position: relative;
   width: 91.5%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   margin-top: 5rem;
-  min-height: 8.7rem;
   padding: 1rem 0rem 0 1rem;
   display: -ms-grid;
   display: grid;
@@ -333,22 +465,44 @@ html::-webkit-scrollbar {
   top: -3rem;
   font: 2rem/3rem 'Orbitron', sans-serif;
   text-align: center;
-  color: #0077ff;
+  color: #000000;
+}
+
+.box .td section .L span img {
+  width: auto;
+  height: 3rem;
+  vertical-align: top;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .box .td section .img {
   display: block;
-  width: 6.2rem;
-  height: 7.6rem;
-  border: 1px solid #ffd06f;
+  width: 7rem;
+  height: 7rem;
   margin-bottom: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .box .td section .img img {
-  width: 100%;
-  height: auto;
+  width: 6.2rem;
+  height: 6.2rem;
   vertical-align: top;
   image-rendering: -webkit-optimize-contrast;
+  position: absolute;
+}
+
+.box .td section .img img:nth-child(2) {
+  width: 7rem;
+  height: 7rem;
 }
 
 .box .td section .img p {
@@ -358,66 +512,44 @@ html::-webkit-scrollbar {
   color: #fff;
 }
 
-.box .td .td-1 {
-  background-color: #db454a;
-}
-
-.box .td .td-2 {
-  background-color: #5145c7;
-}
-
-.box .td .td-3 {
-  background-color: #3a75a0;
-}
-
-.box .td .td-4 {
-  background-color: #9e8d75;
+.box .td .td-1, .box .td .td-2, .box .td .td-3, .box .td .td-4 {
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
 .box .t2 section {
   min-height: 1rem;
-  -ms-grid-columns: (121px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 121px);
+  -ms-grid-columns: (122px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 122px);
   width: 93.5%;
-  height: 100%;
-  padding: 1rem 1rem 0 1rem;
+  height: auto;
+  padding: 0.8rem 1rem 0 1rem;
 }
 
-.box .t2 section .img {
-  width: 12.1rem;
-  height: 100%;
+.box .t2 section .tc1 {
+  width: 12rem;
+  padding-bottom: 0.8rem;
+  font-size: 0;
+}
+
+.box .t2 section .tc1 .tc3 {
+  height: 2rem;
+  font-size: 1.5rem;
+  color: #0960e2;
+  border-top: 2px solid #ffaa00;
+  text-align: center;
   pointer-events: none;
-  border: none;
+  line-height: 1.8rem;
 }
 
-.box .t2 section .img::before, .box .t2 section .img::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.box .t2 section .img .tc1 {
-  width: 7rem;
-  height: 8.6rem;
-  margin: 0 auto;
-  border: 2px solid #ffaa00;
-  pointer-events: auto;
-}
-
-.box .t2 section .img .tc1 p {
-  color: #037ac9;
-  font-weight: bold;
-}
-
-.box .t2 section .img .tc2 {
-  width: 100%;
-  height: 6.6rem;
+.box .t2 section .tc1 .tc2 {
+  height: 6.4rem;
   pointer-events: none;
   font-size: 1.4rem;
   color: #000000;
-  pointer-events: none;
   border: 2px solid #ffaa00;
-  margin-top: -0.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,11 +563,45 @@ html::-webkit-scrollbar {
   white-space: pre-line;
 }
 
+.box .t2 section .tc1 .img {
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.box .t2 section .tc1 .img img {
+  width: 6.2rem;
+  height: 6.2rem;
+  vertical-align: top;
+  image-rendering: -webkit-optimize-contrast;
+  position: absolute;
+}
+
+.box .t2 section .tc1 .img img:nth-child(2) {
+  width: 7rem;
+  height: 7rem;
+}
+
 .box .t2 section .L {
   font-weight: bold;
   font-size: 1.9rem;
 }
 
 .box .t2 .t2-1 {
-  background-color: #72bdeeaf;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
 }

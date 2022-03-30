@@ -10,12 +10,12 @@ body {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
-  min-height: 82rem;
 }
 
 .box {
   width: 100%;
   height: auto;
+  padding-bottom: 3rem;
 }
 
 .box .box1 {

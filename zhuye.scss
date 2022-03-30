@@ -20,10 +20,10 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    min-height: 82rem;
 }
 .box {
     @include ras(100%, auto);
+    padding-bottom: 3rem;
     .box1 {
         @include ras(51.5rem, 29rem);
         position: relative;

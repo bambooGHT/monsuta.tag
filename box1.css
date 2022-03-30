@@ -7,7 +7,6 @@ html::-webkit-scrollbar {
 }
 
 body {
-  font-size: 10px;
   background: url(bg0.png) no-repeat;
   background-position: center;
   background-size: cover;

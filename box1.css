@@ -527,6 +527,10 @@ body::before {
   padding-bottom: 2rem;
 }
 
+.box .t2 {
+  padding-bottom: 2rem;
+}
+
 .box .t2 section {
   min-height: 1rem;
   -ms-grid-columns: (122px)[auto-fill];

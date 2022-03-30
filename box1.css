@@ -346,6 +346,7 @@ body::before {
   height: 3.1rem;
   background: url(1.png) no-repeat, url(3.png) no-repeat right, url(2.png);
   background-size: auto 100%;
+  border-radius: 0.8rem;
   margin: 0 auto;
 }
 
@@ -413,7 +414,6 @@ body::before {
   line-height: 3.1rem;
   font-size: 1.8rem;
   font-weight: bold;
-  letter-spacing: 0.1rem;
 }
 
 .box .box2 .attribute li label span, .box .box3 .attribute li label span {

@@ -1,8 +1,8 @@
 html {
     font-size: 10px;
-    // &::-webkit-scrollbar {
-    //     display: none;
-    // }
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 @mixin ras($a: 100%, $b: 100%) {
     width: $a;
@@ -35,7 +35,8 @@ body::before{
 .box {
     @include ras(100% auto);
     box-sizing: border-box;
-    padding-top: 3%;
+    padding-top: 4rem;
+    margin: 0 auto;
     input {
         display: none;
         &:nth-child(n + 2):checked ~ {
@@ -565,7 +566,7 @@ body::before{
             @include ras(91.5%, auto);
             margin: 0 auto;
             margin-top: 5rem;
-            padding: 1rem 0rem 0 1rem;
+            padding: 1rem 1rem 0 1rem;
             display: grid;
             justify-content: space-between;
             grid-template-columns: repeat(auto-fill, 71px);
@@ -623,6 +624,9 @@ body::before{
         .td-4 {
             @extend .td-1;
         }
+    }
+    .t1{
+        padding-bottom: 2rem;
     }
     .t2 {
         section {

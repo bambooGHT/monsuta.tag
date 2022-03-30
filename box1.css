@@ -2,6 +2,10 @@ html {
   font-size: 10px;
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   font-size: 10px;
   background: url(bg0.png) no-repeat;
@@ -26,7 +30,8 @@ body::before {
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 3%;
+  padding-top: 4rem;
+  margin: 0 auto;
 }
 
 .box input {
@@ -443,7 +448,7 @@ body::before {
   height: auto;
   margin: 0 auto;
   margin-top: 5rem;
-  padding: 1rem 0rem 0 1rem;
+  padding: 1rem 1rem 0 1rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: justify;
@@ -517,6 +522,10 @@ body::before {
   background: rgba(255, 255, 255, 0.6);
   -webkit-box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.box .t1 {
+  padding-bottom: 2rem;
 }
 
 .box .t2 section {

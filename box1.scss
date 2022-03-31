@@ -23,14 +23,6 @@ body {
     background-attachment: fixed;
     height: 100vh;
 }
-body::before{
-    content: "";
-    width: 100%;
-    height: 100%;  
-    position: fixed;
-    z-index: -1;
-    backdrop-filter: blur(2.5px);
-}
 .box {
     @include ras(100% auto);
     box-sizing: border-box;
@@ -59,6 +51,9 @@ body::before{
                 li {
                     &:nth-child(1) {
                         .atb:nth-child(1) {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 0.5rem #000000;
                         }
@@ -87,6 +82,9 @@ body::before{
                 li {
                     &:nth-child(2) {
                         .atb {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 1rem #ff4000;
                         }
@@ -115,6 +113,9 @@ body::before{
                 li {
                     &:nth-child(3) {
                         .atb {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 1rem #00aaff;
                         }
@@ -143,6 +144,9 @@ body::before{
                 li {
                     &:nth-child(4) {
                         .atb {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 1rem #99511e;
                         }
@@ -171,6 +175,9 @@ body::before{
                 li {
                     &:nth-child(5) {
                         .atb {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 1rem #15ff00;
                         }
@@ -199,6 +206,9 @@ body::before{
                 li {
                     &:nth-child(6) {
                         .atb {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 1rem #f7ea00;
                         }
@@ -227,8 +237,43 @@ body::before{
                 li {
                     &:nth-child(7) {
                         .atb {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 1rem #5100ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #atb0:checked ~ {
+        .td {
+            section {
+                .img,
+                .tc1 {
+                    display: none;
+                }
+                .activity {
+                    display: flex;
+                }
+                .activity1 {
+                    display: block;
+                }
+            }
+        }
+        .box2 {
+            .attribute {
+                li {
+                    &:nth-child(8) {
+                        .atb {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
+                            color: #fff;
+                            text-shadow: 0 0 0.5rem #000000;
                         }
                     }
                 }
@@ -256,6 +301,9 @@ body::before{
                 li {
                     &:nth-child(1) {
                         .atb1 {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 0.5rem #000000;
                         }
@@ -284,6 +332,9 @@ body::before{
                 li {
                     &:nth-child(2) {
                         .atb1 {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 0.5rem #000000;
                         }
@@ -312,6 +363,9 @@ body::before{
                 li {
                     &:nth-child(3) {
                         .atb1 {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 0.5rem #000000;
                         }
@@ -340,6 +394,9 @@ body::before{
                 li {
                     &:nth-child(4) {
                         .atb1 {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 0.5rem #000000;
                         }
@@ -368,6 +425,9 @@ body::before{
                 li {
                     &:nth-child(5) {
                         .atb1 {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 0.5rem #000000;
                         }
@@ -396,6 +456,9 @@ body::before{
                 li {
                     &:nth-child(6) {
                         .atb1 {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 0.5rem #000000;
                         }
@@ -424,6 +487,9 @@ body::before{
                 li {
                     &:nth-child(7) {
                         .atb1 {
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
                             color: #fff;
                             text-shadow: 0 0 0.5rem #000000;
                         }
@@ -444,7 +510,10 @@ body::before{
                 li {
                     &:nth-child(1) {
                         .at {
-                            color: rgb(255, 255, 255);
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
+                            color: #fff;
                             text-shadow: 0 0 0.5rem #000000;
                         }
                     }
@@ -470,7 +539,10 @@ body::before{
                     }
                     &:nth-child(2) {
                         .at {
-                            color: rgb(255, 255, 255);
+                            background: url(t2.png);
+                            background-size: auto 100%;
+                            @include ras(11.5rem, 3.2rem);
+                            color: #fff;
                             text-shadow: 0 0 0.5rem #000000;
                         }
                     }
@@ -483,10 +555,9 @@ body::before{
         margin: auto;
         text-align: center;
         p {
-            @include ras(11.5rem, 3.1rem);
-            background: url(1.png) no-repeat, url(3.png) no-repeat right, url(2.png);
+            @include ras(11.5rem, 3.2rem);
+            background: url(t1.png);
             background-size: auto 100%;
-            border-radius: 0.8rem;
             margin: 0 auto;
             a {
                 font-size: 2rem;
@@ -497,7 +568,7 @@ body::before{
     }
     .box2 {
         @include ras(auto, auto);
-        *{
+        * {
             user-select: none;
         }
         .attribute {
@@ -515,16 +586,15 @@ body::before{
             }
             li {
                 display: inline-block;
-                @include ras(11.5rem, auto);
-                background: url(1.png) no-repeat, url(3.png) no-repeat right, url(2.png);
+                @include ras(11.5rem, 3.2rem);
+                background: url(t1.png);
                 background-size: auto 100%;
                 margin: 1rem 0.8rem;
                 text-align: center;
                 vertical-align: top;
-                border-radius: 0.8rem;
                 font-size: 0;
                 &:active {
-                    transform: perspective(10rem) translateZ(-0.2rem);
+                    transform: perspective(10rem) translateZ(-0.1rem);
                     font-size: 0;
                 }
                 &:nth-child(1) {
@@ -546,6 +616,7 @@ body::before{
                             @include ras(auto, 3.1rem);
                             vertical-align: top;
                             image-rendering: -webkit-optimize-contrast;
+                            pointer-events: none;
                         }
                     }
                 }
@@ -611,8 +682,17 @@ body::before{
         }
         .td-1 {
             border-radius: 1.5rem;
-            background: rgba(255, 255, 255, .6);
-            box-shadow: 0 0 1rem .2rem rgba(0, 0, 0,.2);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                backdrop-filter: blur(2px);
+            }
         }
         .td-2 {
             @extend .td-1;
@@ -624,7 +704,7 @@ body::before{
             @extend .td-1;
         }
     }
-    .t1{
+    .t1 {
         padding-bottom: 2rem;
     }
     .t2 {
@@ -632,7 +712,7 @@ body::before{
         section {
             min-height: 1rem;
             grid-template-columns: repeat(auto-fill, 122px);
-            @include ras(93.5%,auto);
+            @include ras(93.5%, auto);
             padding: 0.8rem 1rem 0 1rem;
             .tc1 {
                 width: 12rem;
@@ -686,8 +766,17 @@ body::before{
         }
         .t2-1 {
             border-radius: 1.5rem;
-            background: rgba(255, 255, 255, .6);
-            box-shadow: 0 0 1rem .2rem rgba(0, 0, 0,.2);
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                backdrop-filter: blur(3px);
+            }
         }
     }
 }

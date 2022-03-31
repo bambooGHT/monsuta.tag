@@ -14,16 +14,6 @@ body {
   height: 100vh;
 }
 
-body::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
-  -webkit-backdrop-filter: blur(2.5px);
-          backdrop-filter: blur(2.5px);
-}
-
 .box {
   width: 100% auto;
   height: 100%;
@@ -43,6 +33,10 @@ body::before {
 }
 
 .box #atb:checked ~ .box2 .attribute li:nth-child(1) .atb:nth-child(1), .box #atb:checked ~ .box3 .attribute li:nth-child(1) .atb:nth-child(1) {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 0.5rem #000000;
 }
@@ -63,6 +57,10 @@ body::before {
 }
 
 .box #atb1:checked ~ .box2 .attribute li:nth-child(2) .atb, .box #atb1:checked ~ .box3 .attribute li:nth-child(2) .atb {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 1rem #ff4000;
 }
@@ -83,6 +81,10 @@ body::before {
 }
 
 .box #atb2:checked ~ .box2 .attribute li:nth-child(3) .atb, .box #atb2:checked ~ .box3 .attribute li:nth-child(3) .atb {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 1rem #00aaff;
 }
@@ -103,6 +105,10 @@ body::before {
 }
 
 .box #atb3:checked ~ .box2 .attribute li:nth-child(4) .atb, .box #atb3:checked ~ .box3 .attribute li:nth-child(4) .atb {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 1rem #99511e;
 }
@@ -123,6 +129,10 @@ body::before {
 }
 
 .box #atb4:checked ~ .box2 .attribute li:nth-child(5) .atb, .box #atb4:checked ~ .box3 .attribute li:nth-child(5) .atb {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 1rem #15ff00;
 }
@@ -143,6 +153,10 @@ body::before {
 }
 
 .box #atb5:checked ~ .box2 .attribute li:nth-child(6) .atb, .box #atb5:checked ~ .box3 .attribute li:nth-child(6) .atb {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 1rem #f7ea00;
 }
@@ -163,8 +177,36 @@ body::before {
 }
 
 .box #atb6:checked ~ .box2 .attribute li:nth-child(7) .atb, .box #atb6:checked ~ .box3 .attribute li:nth-child(7) .atb {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 1rem #5100ff;
+}
+
+.box #atb0:checked ~ .td section .img,
+.box #atb0:checked ~ .td section .tc1 {
+  display: none;
+}
+
+.box #atb0:checked ~ .td section .activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box #atb0:checked ~ .td section .activity1 {
+  display: block;
+}
+
+.box #atb0:checked ~ .box2 .attribute li:nth-child(8) .atb, .box #atb0:checked ~ .box3 .attribute li:nth-child(8) .atb {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
+  color: #fff;
+  text-shadow: 0 0 0.5rem #000000;
 }
 
 .box #atb7:checked ~ .td section .img,
@@ -183,6 +225,10 @@ body::before {
 }
 
 .box #atb7:checked ~ .box2 .attribute li:nth-child(1) .atb1, .box #atb7:checked ~ .box3 .attribute li:nth-child(1) .atb1 {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 0.5rem #000000;
 }
@@ -203,6 +249,10 @@ body::before {
 }
 
 .box #atb8:checked ~ .box2 .attribute li:nth-child(2) .atb1, .box #atb8:checked ~ .box3 .attribute li:nth-child(2) .atb1 {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 0.5rem #000000;
 }
@@ -223,6 +273,10 @@ body::before {
 }
 
 .box #atb9:checked ~ .box2 .attribute li:nth-child(3) .atb1, .box #atb9:checked ~ .box3 .attribute li:nth-child(3) .atb1 {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 0.5rem #000000;
 }
@@ -243,6 +297,10 @@ body::before {
 }
 
 .box #atb10:checked ~ .box2 .attribute li:nth-child(4) .atb1, .box #atb10:checked ~ .box3 .attribute li:nth-child(4) .atb1 {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 0.5rem #000000;
 }
@@ -263,6 +321,10 @@ body::before {
 }
 
 .box #atb11:checked ~ .box2 .attribute li:nth-child(5) .atb1, .box #atb11:checked ~ .box3 .attribute li:nth-child(5) .atb1 {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 0.5rem #000000;
 }
@@ -283,6 +345,10 @@ body::before {
 }
 
 .box #atb12:checked ~ .box2 .attribute li:nth-child(6) .atb1, .box #atb12:checked ~ .box3 .attribute li:nth-child(6) .atb1 {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 0.5rem #000000;
 }
@@ -303,6 +369,10 @@ body::before {
 }
 
 .box #atb13:checked ~ .box2 .attribute li:nth-child(7) .atb1, .box #atb13:checked ~ .box3 .attribute li:nth-child(7) .atb1 {
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
   color: #fff;
   text-shadow: 0 0 0.5rem #000000;
 }
@@ -316,7 +386,11 @@ body::before {
 }
 
 .box #at1:checked ~ .box2 .attribute li:nth-child(1) .at, .box #at1:checked ~ .box3 .attribute li:nth-child(1) .at {
-  color: white;
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
+  color: #fff;
   text-shadow: 0 0 0.5rem #000000;
 }
 
@@ -334,7 +408,11 @@ body::before {
 }
 
 .box #at2:checked ~ .box2 .attribute li:nth-child(2) .at, .box #at2:checked ~ .box3 .attribute li:nth-child(2) .at {
-  color: white;
+  background: url(t2.png);
+  background-size: auto 100%;
+  width: 11.5rem;
+  height: 3.2rem;
+  color: #fff;
   text-shadow: 0 0 0.5rem #000000;
 }
 
@@ -347,10 +425,9 @@ body::before {
 
 .box .box1 p {
   width: 11.5rem;
-  height: 3.1rem;
-  background: url(1.png) no-repeat, url(3.png) no-repeat right, url(2.png);
+  height: 3.2rem;
+  background: url(t1.png);
   background-size: auto 100%;
-  border-radius: 0.8rem;
   margin: 0 auto;
 }
 
@@ -390,19 +467,18 @@ body::before {
 .box .box2 .attribute li, .box .box3 .attribute li {
   display: inline-block;
   width: 11.5rem;
-  height: auto;
-  background: url(1.png) no-repeat, url(3.png) no-repeat right, url(2.png);
+  height: 3.2rem;
+  background: url(t1.png);
   background-size: auto 100%;
   margin: 1rem 0.8rem;
   text-align: center;
   vertical-align: top;
-  border-radius: 0.8rem;
   font-size: 0;
 }
 
 .box .box2 .attribute li:active, .box .box3 .attribute li:active {
-  -webkit-transform: perspective(10rem) translateZ(-0.2rem);
-          transform: perspective(10rem) translateZ(-0.2rem);
+  -webkit-transform: perspective(10rem) translateZ(-0.1rem);
+          transform: perspective(10rem) translateZ(-0.1rem);
   font-size: 0;
 }
 
@@ -434,6 +510,7 @@ body::before {
   height: 3.1rem;
   vertical-align: top;
   image-rendering: -webkit-optimize-contrast;
+  pointer-events: none;
 }
 
 .box .td {
@@ -518,9 +595,20 @@ body::before {
 
 .box .td .td-1, .box .td .td-2, .box .td .td-3, .box .td .td-4 {
   border-radius: 1.5rem;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.box .td .td-1::before, .box .td .td-2::before, .box .td .td-3::before, .box .td .td-4::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 .box .t1 {
@@ -613,7 +701,18 @@ body::before {
 
 .box .t2 .t2-1 {
   border-radius: 1.5rem;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.4);
   -webkit-box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.box .t2 .t2-1::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }

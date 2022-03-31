@@ -1,0 +1,169 @@
+@mixin ras($a: 100%, $b: 100%) {
+    width: $a;
+    height: $b;
+}
+@mixin taxian {
+    &::before,
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+@mixin opa {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 95%;
+        height: 100%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        z-index: -1;
+        backdrop-filter: blur(3px);
+    }
+}
+html {
+    font-size: 10px;
+}
+body {
+    background: url(bg1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    position: relative;
+}
+.box1 {
+    width: 80%;
+    height: 100%;
+    margin: 1rem auto;
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 1rem 0;
+    overflow: hidden;
+    max-width: 110rem;
+    cursor: default;
+    i {
+        display: block;
+        width: 100%;
+        height: 0.3rem;
+        background-color: rgba(0, 195, 255, 0.5);
+        margin: 1rem 0;
+    }
+    .top {
+        @include ras(95%, 100%);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        .img {
+            display: block;
+            @include ras(8rem, 8rem);
+            margin: 0.5rem;
+            margin-left: 2.5%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            img {
+                @include ras(7.2rem, 7.2rem);
+                vertical-align: top;
+                image-rendering: -webkit-optimize-contrast;
+                position: absolute;
+                &:nth-child(2) {
+                    @include ras(8rem, 8rem);
+                }
+            }
+        }
+        .top-1 {
+            display: flex;
+            .tg {
+                margin: 0 0.5rem;
+                p {
+                    color: white;
+                    text-shadow: 0 0 0.1rem #000;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                }
+                .imt2 {
+                    color: #df0000;
+                }
+                .imt3 {
+                    color: #85f6f6;
+                }
+                img {
+                    display: block;
+                    @include ras(auto, 18rem);
+                    image-rendering: -webkit-optimize-contrast;
+                }
+                &:nth-child(1) {
+                    background: rgba(255, 255, 255, 0.4);
+                    box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+                    border-radius: 0.8rem;
+                    @include opa;
+                    flex: auto;
+                }
+            }
+        }
+
+        .tag {
+            @include ras(100%, 100%);
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+            color: #fcfcfc;
+            text-shadow: 0 0 0.1rem #000;
+            border-radius: 0.8rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 1rem auto;
+            margin-top: 0;
+            @include opa;
+            text-align: center;
+        }
+        .tag1 {
+            @include ras(100%, auto);
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.3);
+            color: #444444;
+            border-radius: 0.8rem;
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin: 0.3rem auto;
+            text-align: center;
+            @include opa;
+            .nav {
+                li {
+                    span {
+                        display: inline-block;
+                        min-width: 8rem;
+                    }
+                }
+            }
+            img {
+                display: block;
+                @include ras(auto, 42rem);
+                margin: 0 auto;
+                image-rendering: -webkit-optimize-contrast;
+                padding: 0.5rem 0;
+            }
+            .map-tag1 {
+                span {
+                    font-size: 2.5rem;
+                    color: #d80303;
+                }
+            }
+            a {
+                pointer-events: none;
+                img {
+                    pointer-events: auto;
+                    @include ras(auto, 30rem);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.box1{
+    width: 95%;
+    .top{
+        width: 95%;
+        .top-1{
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+            .tg{
+                padding: 0;
+                &:nth-child(1){
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .tag1{
+            img{
+                width: 96%;
+                height: 100%;
+            }
+            a{
+                img{
+                    width: 96%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

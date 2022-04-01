@@ -432,6 +432,7 @@ body {
 }
 
 .box .box1 p a {
+  line-height: 3.2rem;
   font-size: 2rem;
   color: #000000;
   font-weight: bold;

@@ -563,6 +563,7 @@ body {
                 font-size: 2rem;
                 color: #000000;
                 font-weight: bold;
+                user-select: none;
             }
         }
     }
@@ -605,15 +606,15 @@ body {
                 }
                 label {
                     display: inline-block;
-                    @include ras(11.5rem, 3.1rem);
-                    line-height: 3.1rem;
+                    @include ras(11.5rem, 3.2rem);
+                    line-height: 3.2rem;
                     font-size: 1.8rem;
                     font-weight: bold;
                     span {
-                        @include ras(4rem, 3.1rem);
+                        @include ras(4rem, 3.2rem);
                         user-select: none;
                         img {
-                            @include ras(auto, 3.1rem);
+                            @include ras(auto, 3.2rem);
                             vertical-align: top;
                             image-rendering: -webkit-optimize-contrast;
                             pointer-events: none;
@@ -638,7 +639,7 @@ body {
             margin-top: 5rem;
             display: grid;
             justify-content: space-between;
-            grid-template-columns: repeat(auto-fill, 7.5rem);
+            grid-template-columns: repeat(auto-fill, 7.6rem);
             .L {
                 @include ras(auto, 3rem);
                 position: absolute;
@@ -646,6 +647,7 @@ body {
                 font: 2rem/3rem 'Orbitron', sans-serif;
                 text-align: center;
                 color: #000000;
+                user-select: none;
                 span {
                     img {
                         @include ras(auto, 3rem);
@@ -656,25 +658,28 @@ body {
             }
             .img {
                 display: block;
-                @include ras(7.5rem, 7.5rem);
+                @include ras(7.6rem, 7.6rem);
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                user-select: none;
+                pointer-events: none;
                 img {
-                    @include ras(6.9rem, 6.9rem);
-                    padding: 0.5rem;
+                    @include ras(7rem, 7rem);
                     vertical-align: top;
                     image-rendering: -webkit-optimize-contrast;
                     position: absolute;
+                    padding: 0.5rem;
+                    pointer-events: auto;
                     &:nth-child(2) {
-                        @include ras(7.5rem, 7.5rem);
+                        @include ras(7.6rem, 7.6rem);
+                        pointer-events: none;
+                        user-select: none;
                     }
                 }
                 p {
-                    line-height: 1.4;
-                    text-align: center;
-                    font-size: 1.2rem;
+                    font-size: 1.3rem;
                     color: #fff;
                 }
             }

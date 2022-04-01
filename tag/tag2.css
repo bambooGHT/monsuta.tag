@@ -4,22 +4,50 @@
 }
 
 .box .td2 .td2-1 {
-  width: 75%;
+  width: 80%;
   height: 100%;
 }
 
 .box .td2 .td2-1 .cn {
+  width: 4rem;
+  height: 4rem;
   position: fixed;
-  right: 84.8%;
+  right: 87%;
   left: auto;
   top: auto;
   margin-top: 5rem;
   margin-right: auto;
 }
 
+.box .td2 .td2-1 .cn span {
+  -webkit-transform: rotateZ(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotateZ(90deg);
+}
+
+.box .td2 .td2-1 .cn label {
+  font-size: 1.5rem;
+}
+
+.box .td2 .td2-1 .cn label:nth-child(1) {
+  width: 2rem;
+  height: 2rem;
+  top: -0.2rem;
+  left: 0.5rem;
+}
+
+.box .td2 .td2-1 .cn label:nth-child(3) {
+  bottom: 0.56rem;
+  right: 0.6rem;
+  width: 2rem;
+  height: 2rem;
+}
+
 .box .td2 .td2-1 .img {
+  width: 4rem;
+  height: 4rem;
   position: fixed;
-  right: 84.8%;
+  right: 87%;
   left: auto;
   top: auto;
   margin-right: auto;
@@ -61,12 +89,6 @@
 
 .box .td2 .td2-1 .t3 .tile p:nth-child(n + 2) {
   font-size: 1.3rem;
-}
-
-.box .td2 .td2-1 .t3 .tile .kurasu1 span:nth-child(1) {
-  width: 100%;
-  height: 100%;
-  display: block;
 }
 
 .box .td2 .td2-1 .t3 .tile-1 li:nth-child(n + 2) {

@@ -1,0 +1,22 @@
+.box{
+    .box2{
+        .attribute{
+            li{
+                margin: 0.5rem 0.5rem;
+            }
+        }
+    }
+    .box3 {
+        @extend .box2;
+    }
+    .td{
+        section{
+            width: 90%;
+        }
+    }
+    .t2{
+        .t2-1{
+            width: 97%;
+        }
+    }
+}

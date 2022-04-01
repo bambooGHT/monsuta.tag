@@ -633,13 +633,12 @@ body {
                 box-sizing: border-box;
             }
             position: relative;
-            @include ras(91.5%, auto);
+            @include ras(80%, auto);
             margin: 0 auto;
             margin-top: 5rem;
-            padding: 1rem 1rem 0 1rem;
             display: grid;
             justify-content: space-between;
-            grid-template-columns: repeat(auto-fill, 71px);
+            grid-template-columns: repeat(auto-fill, 7.5rem);
             .L {
                 @include ras(auto, 3rem);
                 position: absolute;
@@ -657,19 +656,19 @@ body {
             }
             .img {
                 display: block;
-                @include ras(7rem, 7rem);
-                margin-bottom: 1rem;
+                @include ras(7.5rem, 7.5rem);
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 img {
-                    @include ras(6.2rem, 6.2rem);
+                    @include ras(6.9rem, 6.9rem);
+                    padding: 0.5rem;
                     vertical-align: top;
                     image-rendering: -webkit-optimize-contrast;
                     position: absolute;
                     &:nth-child(2) {
-                        @include ras(7rem, 7rem);
+                        @include ras(7.5rem, 7.5rem);
                     }
                 }
                 p {
@@ -711,13 +710,13 @@ body {
         padding-bottom: 2rem;
         section {
             min-height: 1rem;
-            grid-template-columns: repeat(auto-fill, 122px);
-            @include ras(93.5%, auto);
-            padding: 0.8rem 1rem 0 1rem;
+            grid-template-columns: repeat(auto-fill, 12.5rem);
+            @include ras(80%, auto);
             .tc1 {
-                width: 12rem;
-                padding-bottom: 0.8rem;
+                width: 12.5rem;
                 font-size: 0;
+                padding: 0.8rem 0.5rem;
+                box-sizing: border-box;
                 .tc3 {
                     height: 2rem;
                     font-size: 1.5rem;
@@ -741,8 +740,7 @@ body {
                 }
                 .img {
                     display: block;
-                    @include ras(7rem, 7rem);
-                    margin-bottom: 1rem;
+                    @include ras(6.8rem, 6.8rem);
                     position: relative;
                     display: flex;
                     align-items: center;
@@ -753,8 +751,9 @@ body {
                         vertical-align: top;
                         image-rendering: -webkit-optimize-contrast;
                         position: absolute;
+                        padding: 0;
                         &:nth-child(2) {
-                            @include ras(7rem, 7rem);
+                            @include ras(6.8rem, 6.8rem);
                         }
                     }
                 }
@@ -775,7 +774,7 @@ body {
                 width: 100%;
                 height: 100%;
                 z-index: -1;
-                backdrop-filter: blur(3px);
+                backdrop-filter: blur(4px);
             }
         }
     }

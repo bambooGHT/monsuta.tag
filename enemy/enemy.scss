@@ -15,15 +15,17 @@ html {
 }
 .boxA {
     @include ras();
+    padding-top: 1rem;
+    box-sizing: border-box;
     input {
         display: none;
     }
     .header {
         @include ras(60%, 5rem);
-        margin: 1rem auto;
         @include taxian;
         position: relative;
         max-width: 110rem;
+        margin: 0 auto;
         #a:checked ~ {
             .top {
                 .top-name {
@@ -136,7 +138,7 @@ html {
 }
 
 @media screen and(max-width:800px) {
-    .box {
+    .boxA {
         .header {
             width: 80%;
         }

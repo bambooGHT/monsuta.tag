@@ -15,7 +15,7 @@ html {
 }
 .boxA {
     @include ras();
-    padding-top: 1rem;
+    padding: 1rem 0;
     box-sizing: border-box;
     input {
         display: none;
@@ -37,8 +37,12 @@ html {
             }
             .cheack {
                 height: 20rem;
+                .che {
+                    display: none;
+                }
                 .che1 {
                     display: block;
+                    opacity: 1;
                 }
             }
         }
@@ -53,8 +57,32 @@ html {
             }
             .cheack {
                 height: 20rem;
+                .che {
+                    display: none;
+                }
                 .che2 {
                     display: block;
+                    opacity: 1;
+                }
+            }
+        }
+        #s:checked ~ {
+            .top {
+                .top-name {
+                    &:nth-child(3) {
+                        color: #ffffff;
+                        text-shadow: 0 0 0.5rem #000000;
+                    }
+                }
+            }
+            .cheack {
+                height: 20rem;
+                .che {
+                    display: none;
+                }
+                .che3 {
+                    display: block;
+                    opacity: 1;
                 }
             }
         }
@@ -76,7 +104,7 @@ html {
                 &:nth-child(1) {
                     margin-left: 5%;
                 }
-                &:nth-child(3) {
+                &:nth-child(4) {
                     flex: auto;
                     text-align: right;
                     margin-right: 5%;
@@ -90,10 +118,10 @@ html {
             overflow: hidden;
             @include ras(100%, 0);
             transition: 0.5s;
-            background: radial-gradient(circle at top left, transparent 1.5rem, rgb(255, 255, 255) 0) top left,
-                radial-gradient(circle at top right, transparent 1.5rem, rgb(255, 255, 255) 0) top right,
-                radial-gradient(circle at bottom right, transparent 1.5rem, rgb(255, 255, 255) 0) bottom right,
-                radial-gradient(circle at bottom left, transparent 1.5rem, rgb(255, 255, 255) 0) bottom left;
+            background: radial-gradient(circle at top left, transparent 1.5rem, rgba(255, 255, 255,.8) 0) top left,
+                radial-gradient(circle at top right, transparent 1.5rem, rgba(255, 255, 255,.8) 0) top right,
+                radial-gradient(circle at bottom right, transparent 1.5rem, rgba(255, 255, 255,.8) 0) bottom right,
+                radial-gradient(circle at bottom left, transparent 1.5rem, rgba(255, 255, 255,.8) 0) bottom left;
             background-size: 50% 50%;
             background-repeat: no-repeat;
             position: absolute;
@@ -102,7 +130,13 @@ html {
             text-align: center;
             div {
                 margin-top: 1rem;
-                display: none;
+                opacity: 0;
+                transition: 0.5s;
+                display: block;
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
                 a {
                     width: auto;
                     font-size: 1.8rem;
@@ -111,7 +145,7 @@ html {
                     text-align: center;
                     span {
                         position: relative;
-                        color: #333333;
+                        color: #000000;
                         &::before {
                             content: '';
                             position: absolute;
@@ -120,7 +154,7 @@ html {
                             width: 100%;
                             height: 0.2rem;
                             transition: 0.5s;
-                            background: linear-gradient(90deg, #1c86e9, rgb(91, 252, 113));
+                            background: linear-gradient(90deg, #0084ffe5, rgb(0, 255, 170));
                             background-size: 0 0.2rem;
                             background-repeat: no-repeat;
                             background-position: 50% bottom;

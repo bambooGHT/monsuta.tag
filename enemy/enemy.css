@@ -2,89 +2,86 @@ html {
   font-size: 10px;
 }
 
-.box {
+.boxA {
   width: 100%;
   height: 100%;
 }
 
-.box input {
+.boxA input {
   display: none;
 }
 
-.box .header {
-  width: 40%;
+.boxA .header {
+  width: 60%;
   height: 5rem;
   margin: 1rem auto;
-  position: absolute;
-  top: -25%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  position: relative;
+  max-width: 110rem;
 }
 
-.box .header::before, .box .header::after {
+.boxA .header::before, .boxA .header::after {
   content: '';
   display: table;
   clear: both;
 }
 
-.box .header #a:checked ~ .top .top-name:nth-child(1) {
+.boxA .header #a:checked ~ .top .top-name:nth-child(1) {
   color: #ffffff;
   text-shadow: 0 0 0.5rem #000000;
 }
 
-.box .header #a:checked ~ .cheack {
+.boxA .header #a:checked ~ .cheack {
   height: 20rem;
 }
 
-.box .header #a:checked ~ .cheack .che1 {
+.boxA .header #a:checked ~ .cheack .che1 {
   display: block;
 }
 
-.box .header #n:checked ~ .top .top-name:nth-child(2) {
+.boxA .header #n:checked ~ .top .top-name:nth-child(2) {
   color: #ffffff;
   text-shadow: 0 0 0.5rem #000000;
 }
 
-.box .header #n:checked ~ .cheack {
+.boxA .header #n:checked ~ .cheack {
   height: 20rem;
 }
 
-.box .header #n:checked ~ .cheack .che2 {
+.boxA .header #n:checked ~ .cheack .che2 {
   display: block;
 }
 
-.box .header .top {
+.boxA .header .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 4rem;
-  background: -o-linear-gradient(315deg, transparent 1.5rem, #E7D6B6 15%) top left, -o-linear-gradient(225deg, transparent 1.5rem, #E7D6B6 15%) top right, -o-linear-gradient(135deg, transparent 1.5rem, #E7D6B6 15%) bottom right, -o-linear-gradient(45deg, transparent 1.5rem, #E7D6B6 15%) bottom left;
-  background: linear-gradient(135deg, transparent 1.5rem, #E7D6B6 15%) top left, linear-gradient(-135deg, transparent 1.5rem, #E7D6B6 15%) top right, linear-gradient(-45deg, transparent 1.5rem, #E7D6B6 15%) bottom right, linear-gradient(45deg, transparent 1.5rem, #E7D6B6 15%) bottom left;
-  background-size: 51% 50%;
-  background-repeat: no-repeat;
+  height: 5rem;
+  background: rgba(255, 255, 255, 0.8);
+  background-size: 50% 50%;
+  -webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+          clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
   position: relative;
   z-index: 999;
-  margin-bottom: 0.1rem;
+  margin: 0 auto;
 }
 
-.box .header .top .top-name {
+.boxA .header .top .top-name {
   width: 4rem;
-  height: 2rem;
+  height: 5rem;
   font: bold 2rem/2rem Microsoft YaHei UI Light;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  padding: 1rem 2rem;
+  line-height: 5rem;
+  padding: 0 2rem;
 }
 
-.box .header .top .top-name:nth-child(1) {
-  margin-left: 4%;
+.boxA .header .top .top-name:nth-child(1) {
+  margin-left: 5%;
 }
 
-.box .header .top .top-name:nth-child(3) {
+.boxA .header .top .top-name:nth-child(3) {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -92,44 +89,46 @@ html {
   margin-right: 5%;
 }
 
-.box .header .top .top-name:nth-child(3) a {
+.boxA .header .top .top-name:nth-child(3) a {
   color: #d40000;
 }
 
-.box .header .cheack {
+.boxA .header .cheack {
   overflow: hidden;
   width: 100%;
   height: 0;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  background: -o-radial-gradient(top left, circle, transparent 1.5rem, #E7D6B6 0) top left, -o-radial-gradient(top right, circle, transparent 1.5rem, #E7D6B6 0) top right, -o-radial-gradient(bottom right, circle, transparent 1.5rem, #E7D6B6 0) bottom right, -o-radial-gradient(bottom left, circle, transparent 1.5rem, #E7D6B6 0) bottom left;
-  background: radial-gradient(circle at top left, transparent 1.5rem, #E7D6B6 0) top left, radial-gradient(circle at top right, transparent 1.5rem, #E7D6B6 0) top right, radial-gradient(circle at bottom right, transparent 1.5rem, #E7D6B6 0) bottom right, radial-gradient(circle at bottom left, transparent 1.5rem, #E7D6B6 0) bottom left;
-  background-size: 51% 51%;
+  background: -o-radial-gradient(top left, circle, transparent 1.5rem, white 0) top left, -o-radial-gradient(top right, circle, transparent 1.5rem, white 0) top right, -o-radial-gradient(bottom right, circle, transparent 1.5rem, white 0) bottom right, -o-radial-gradient(bottom left, circle, transparent 1.5rem, white 0) bottom left;
+  background: radial-gradient(circle at top left, transparent 1.5rem, white 0) top left, radial-gradient(circle at top right, transparent 1.5rem, white 0) top right, radial-gradient(circle at bottom right, transparent 1.5rem, white 0) bottom right, radial-gradient(circle at bottom left, transparent 1.5rem, white 0) bottom left;
+  background-size: 50% 50%;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
   z-index: 99;
-}
-
-.box .header .cheack div {
-  display: none;
-  margin-top: 1rem;
-}
-
-.box .header .cheack div a {
-  width: auto;
-  display: block;
-  font-size: 1.8rem;
+  margin-top: 0.5rem;
   text-align: center;
-  margin: 0.5rem 0;
 }
 
-.box .header .cheack div a span {
+.boxA .header .cheack div {
+  margin-top: 1rem;
+  display: none;
+}
+
+.boxA .header .cheack div a {
+  width: auto;
+  font-size: 1.8rem;
+  display: inline-block;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.boxA .header .cheack div a span {
   position: relative;
   color: #333333;
 }
 
-.box .header .cheack div a span::before {
+.boxA .header .cheack div a span::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -139,9 +138,9 @@ html {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  background: -webkit-gradient(linear, left top, right top, from(#ff0000), to(#00ff0d));
-  background: -o-linear-gradient(left, #ff0000, #00ff0d);
-  background: linear-gradient(90deg, #ff0000, #00ff0d);
+  background: -webkit-gradient(linear, left top, right top, from(#1c86e9), to(#5bfc71));
+  background: -o-linear-gradient(left, #1c86e9, #5bfc71);
+  background: linear-gradient(90deg, #1c86e9, #5bfc71);
   background-size: 0 0.2rem;
   background-repeat: no-repeat;
   background-position: 50% bottom;
@@ -150,7 +149,7 @@ html {
   transition: 0.5s all;
 }
 
-.box .header .cheack div a span:hover::before {
+.boxA .header .cheack div a span:hover::before {
   background-size: 100% 0.2rem;
 }
 

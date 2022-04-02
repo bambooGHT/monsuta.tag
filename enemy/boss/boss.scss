@@ -14,17 +14,25 @@ html {
     }
 }
 body {
-    background: #ad8d40 url(http://www.transparenttextures.com/patterns/fake-luxury.png) fixed 50% 100%;
+    background: url(http://www.transparenttextures.com/patterns/fake-luxury.png) 50% 100%,
+        url(../Activity/bg1.png) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100%;
+    position: relative;
+}
+.boxA{
+    position: relative;
+    z-index: 9999;
 }
 .box {
     @include ras(75%, 100%);
     margin: auto;
     @include taxian();
     margin-bottom: 1rem;
-    margin-top: 2%;
     .box1 {
         @include ras(80%, 100%);
         margin: 0 auto;
+        max-width: 100rem;
         .top {
             @include ras(9rem, 9rem);
             border: 4px solid #fafad2;
@@ -257,12 +265,11 @@ body {
                     .lvb7 {
                         color: rgb(231, 5, 5);
                         display: none;
-                        background-color: #b6b07e;
                     }
                     li {
                         display: flex;
                         @include ras(100%, auto);
-                        justify-content: space-between;
+                        justify-content: space-around;
                         font-size: 1.5rem;
                         line-height: 2.5rem;
                         box-sizing: border-box;
@@ -270,6 +277,9 @@ body {
                             width: 7rem;
                             font-size: 1.7rem;
                             text-align: center;
+                        }
+                        &:hover {
+                            background-color: #b6b07e;
                         }
                     }
                 }
@@ -311,7 +321,6 @@ body {
                 .lvb9 {
                     color: rgb(231, 5, 5);
                     display: none;
-                    background-color: #b6b07e;
                 }
                 ul {
                     @include ras(24rem, 100%);
@@ -319,6 +328,9 @@ body {
                         min-width: 24rem;
                         font-size: 1.5rem;
                         display: flex;
+                        &:hover {
+                            background-color: #b6b07e;
+                        }
                         &:nth-child(1) {
                             font-weight: bold;
                         }

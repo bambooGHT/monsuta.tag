@@ -3,7 +3,15 @@ html {
 }
 
 body {
-  background: #ad8d40 url(http://www.transparenttextures.com/patterns/fake-luxury.png) fixed 50% 100%;
+  background: url(http://www.transparenttextures.com/patterns/fake-luxury.png) 50% 100%, url(../Activity/bg1.png) no-repeat center/cover;
+  background-attachment: fixed;
+  height: 100%;
+  position: relative;
+}
+
+.boxA {
+  position: relative;
+  z-index: 9999;
 }
 
 .box {
@@ -11,7 +19,6 @@ body {
   height: 100%;
   margin: auto;
   margin-bottom: 1rem;
-  margin-top: 2%;
 }
 
 .box::before, .box::after {
@@ -24,6 +31,7 @@ body {
   width: 80%;
   height: 100%;
   margin: 0 auto;
+  max-width: 100rem;
 }
 
 .box .box1 .top {
@@ -276,7 +284,6 @@ body {
 .box .box1 .tag .panel ul .lvb7 {
   color: #e70505;
   display: none;
-  background-color: #b6b07e;
 }
 
 .box .box1 .tag .panel ul li {
@@ -285,9 +292,8 @@ body {
   display: flex;
   width: 100%;
   height: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   font-size: 1.5rem;
   line-height: 2.5rem;
   -webkit-box-sizing: border-box;
@@ -298,6 +304,10 @@ body {
   width: 7rem;
   font-size: 1.7rem;
   text-align: center;
+}
+
+.box .box1 .tag .panel ul li:hover {
+  background-color: #b6b07e;
 }
 
 .box .box1 .tag .panel .describe {
@@ -355,7 +365,6 @@ body {
 .box .box1 .tag .pane2 .lvb9 {
   color: #e70505;
   display: none;
-  background-color: #b6b07e;
 }
 
 .box .box1 .tag .pane2 ul {
@@ -369,6 +378,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.box .box1 .tag .pane2 ul li:hover {
+  background-color: #b6b07e;
 }
 
 .box .box1 .tag .pane2 ul li:nth-child(1) {

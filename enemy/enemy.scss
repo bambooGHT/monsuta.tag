@@ -13,21 +13,17 @@ html {
         clear: both;
     }
 }
-.box {
+.boxA {
     @include ras();
-    input{
+    input {
         display: none;
     }
     .header {
-        @include ras(40%, 5rem);
+        @include ras(60%, 5rem);
         margin: 1rem auto;
         @include taxian;
-        position: absolute;
-        top: -25%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
+        position: relative;
+        max-width: 110rem;
         #a:checked ~ {
             .top {
                 .top-name {
@@ -62,23 +58,21 @@ html {
         }
         .top {
             display: flex;
-            @include ras(100%, 4rem);
-            background: linear-gradient(135deg, transparent 1.5rem, #E7D6B6 15%) top left,
-                linear-gradient(-135deg, transparent 1.5rem, #E7D6B6 15%) top right,
-                linear-gradient(-45deg, transparent 1.5rem, #E7D6B6 15%) bottom right,
-                linear-gradient(45deg, transparent 1.5rem, #E7D6B6 15%) bottom left;
-            background-size: 51% 50%;
-            background-repeat: no-repeat;
+            @include ras(100%, 5rem);
+            background: rgba(255, 255, 255, 0.8);
+            background-size: 50% 50%;
+            clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
             position: relative;
             z-index: 999;
-            margin-bottom: 0.1rem;
+            margin: 0 auto;
             .top-name {
-                @include ras(4rem, 2rem);
+                @include ras(4rem, 5rem);
                 font: bold 2rem/2rem Microsoft YaHei UI Light;
                 flex: none;
-                padding: 1rem 2rem;
+                line-height: 5rem;
+                padding: 0 2rem;
                 &:nth-child(1) {
-                    margin-left: 4%;
+                    margin-left: 5%;
                 }
                 &:nth-child(3) {
                     flex: auto;
@@ -94,23 +88,25 @@ html {
             overflow: hidden;
             @include ras(100%, 0);
             transition: 0.5s;
-            background: radial-gradient(circle at top left, transparent 1.5rem, #E7D6B6 0) top left,
-                radial-gradient(circle at top right, transparent 1.5rem, #E7D6B6 0) top right,
-                radial-gradient(circle at bottom right, transparent 1.5rem, #E7D6B6 0) bottom right,
-                radial-gradient(circle at bottom left, transparent 1.5rem, #E7D6B6 0) bottom left;
-            background-size: 51% 51%;
+            background: radial-gradient(circle at top left, transparent 1.5rem, rgb(255, 255, 255) 0) top left,
+                radial-gradient(circle at top right, transparent 1.5rem, rgb(255, 255, 255) 0) top right,
+                radial-gradient(circle at bottom right, transparent 1.5rem, rgb(255, 255, 255) 0) bottom right,
+                radial-gradient(circle at bottom left, transparent 1.5rem, rgb(255, 255, 255) 0) bottom left;
+            background-size: 50% 50%;
             background-repeat: no-repeat;
-            position: relative;
+            position: absolute;
             z-index: 99;
+            margin-top: 0.5rem;
+            text-align: center;
             div {
-                display: none;
                 margin-top: 1rem;
+                display: none;
                 a {
                     width: auto;
-                    display: block;
                     font-size: 1.8rem;
-                    text-align: center;
+                    display: inline-block;
                     margin: 0.5rem 0;
+                    text-align: center;
                     span {
                         position: relative;
                         color: #333333;
@@ -122,7 +118,7 @@ html {
                             width: 100%;
                             height: 0.2rem;
                             transition: 0.5s;
-                            background: linear-gradient(90deg, #ff0000, rgb(0, 255, 13));
+                            background: linear-gradient(90deg, #1c86e9, rgb(91, 252, 113));
                             background-size: 0 0.2rem;
                             background-repeat: no-repeat;
                             background-position: 50% bottom;

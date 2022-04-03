@@ -78,7 +78,7 @@ html {
 }
 
 .boxA .header #s:checked ~ .cheack .che3 {
-  display: block;
+  display: inline-block;
   opacity: 1;
 }
 
@@ -190,6 +190,83 @@ html {
 
 .boxA .header .cheack div a span:hover::before {
   background-size: 100% 0.2rem;
+}
+
+.boxA .header .cheack .che3 .BG {
+  display: inline-block;
+  width: 14rem;
+  height: 7.6rem;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  margin-bottom: 1rem;
+}
+
+.boxA .header .cheack .che3 .BG::before {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background: -webkit-gradient(linear, left top, right top, from(#0084ffe5), to(#00ffaa));
+  background: -o-linear-gradient(left, #0084ffe5, #00ffaa);
+  background: linear-gradient(90deg, #0084ffe5, #00ffaa);
+  background-size: 0 0.2rem;
+  background-repeat: no-repeat;
+  background-position: 50% bottom;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.boxA .header .cheack .che3 .BG:hover::before {
+  background-size: 100% 0.2rem;
+}
+
+.boxA .header .cheack .che3 .BG img {
+  width: 7rem;
+  height: 7rem;
+  vertical-align: top;
+  image-rendering: -webkit-optimize-contrast;
+  position: absolute;
+  padding: 0.5rem;
+  pointer-events: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.boxA .header .cheack .che3 .BG img:nth-child(2) {
+  width: 7.6rem;
+  height: 7.6rem;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.boxA .header .cheack .che3 .BG p {
+  position: absolute;
+  font-size: 1.3rem;
+  bottom: -1rem;
+  color: #000000;
+  bottom: -1rem;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  pointer-events: auto;
 }
 
 @media screen and (max-width: 800px) {

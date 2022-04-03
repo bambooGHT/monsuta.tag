@@ -7,7 +7,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-  background: url(http://www.transparenttextures.com/patterns/fake-luxury.png) 50% 100%, url(../Activity/bg1.png) no-repeat center/cover;
+  background: url(../Activity/bg1.png) no-repeat center/cover;
   background-attachment: fixed;
   height: 100vh;
 }

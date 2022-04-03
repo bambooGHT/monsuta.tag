@@ -1,0 +1,556 @@
+html {
+    font-size: 10px;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+@mixin ras($a: 100%, $b: 100%) {
+    width: $a;
+    height: $b;
+}
+@mixin taxian {
+    &::before,
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+@mixin opa {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 95%;
+        height: 100%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        z-index: -1;
+        backdrop-filter: blur(3px);
+    }
+}
+body {
+    background: url(../Activity/bg1.png) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.boxA {
+    position: relative;
+    z-index: 9999;
+}
+.glod-box {
+    @include ras(100%, auto);
+    max-width: 120rem;
+    margin: 0 auto;
+    .glod {
+        @include ras(90%, auto);
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding-bottom: 1.5rem;
+        .glod-top {
+            @include ras(100%, auto);
+            display: flex;
+            padding: 1rem 0;
+            .webp {
+                @include ras(100%, auto);
+                min-width: 39rem;
+                margin: auto;
+                img {
+                    @include ras(100%, auto);
+                    vertical-align: top;
+                    image-rendering: -webkit-optimize-contrast;
+                }
+            }
+            .aside {
+                @include ras(100%, 100%);
+                flex: auto;
+                padding-left: 2rem;
+                margin: auto;
+                background-color: rgba(255, 228, 196, 0.774);
+                border-radius: 3rem;
+                border: 0.2rem solid rgb(255, 231, 18);
+                box-shadow: 0 0 1rem rgb(223, 204, 40);
+                p {
+                    font-size: 2rem;
+                    @include ras(100%, 4rem);
+                    line-height: 4rem;
+                    img {
+                        vertical-align: sub;
+                        image-rendering: -moz-crisp-edges;
+                        image-rendering: -o-crisp-edges;
+                        image-rendering: -webkit-optimize-contrast;
+                        image-rendering: crisp-edges;
+                        -ms-interpolation-mode: nearest-neighbor;
+                        @include ras(3rem, 3rem);
+                    }
+                    &:nth-child(1) {
+                        padding-top: 3rem;
+                        padding-bottom: 9rem;
+                    }
+                }
+                .Intensive-Care {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+                .care-1 {
+                    font-weight: bold;
+                }
+            }
+        }
+        .glod-material-list {
+            overflow: hidden;
+            @include ras(100%, auto);
+            background-color: rgba(255, 228, 196, 0.774);
+            border-radius: 3rem;
+            border: 0.2rem solid rgb(255, 231, 18);
+            box-shadow: 0 0 1rem rgb(223, 204, 40);
+            @include opa();
+            input {
+                display: none;
+            }
+            #l1:checked ~ {
+                div {
+                    p {
+                        .lv-1:nth-child(1) {
+                            &:before {
+                                background-color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .Skill {
+                    .material {
+                        p {
+                            .harm:nth-child(1) {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            #l2:checked ~ {
+                div {
+                    p {
+                        .lv-1:nth-child(2) {
+                            &:before {
+                                background-color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .Skill {
+                    .material {
+                        p {
+                            .harm:nth-child(2) {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            #l3:checked ~ {
+                div {
+                    p {
+                        .lv-1:nth-child(3) {
+                            &:before {
+                                background-color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .Skill {
+                    .material {
+                        p {
+                            .harm:nth-child(3) {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            #l4:checked ~ {
+                div {
+                    p {
+                        .lv-1:nth-child(4) {
+                            &:before {
+                                background-color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .Skill {
+                    .material {
+                        p {
+                            .harm:nth-child(4) {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            #l5:checked ~ {
+                div {
+                    p {
+                        .lv-1:nth-child(5) {
+                            &:before {
+                                background-color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .Skill {
+                    .material {
+                        p {
+                            .harm:nth-child(5) {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            #l6:checked ~ {
+                div {
+                    p {
+                        .lv-2:nth-child(1) {
+                            &:before {
+                                background-color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .Skill {
+                    .material {
+                        p {
+                            .harm:nth-child(6) {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            #l7:checked ~ {
+                div {
+                    p {
+                        .lv-2:nth-child(2) {
+                            &:before {
+                                background-color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .Skill {
+                    .material {
+                        p {
+                            .harm:nth-child(7) {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            #l8:checked ~ {
+                div {
+                    p {
+                        .lv-2:nth-child(3) {
+                            &:before {
+                                background-color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .Skill {
+                    .material {
+                        p {
+                            .harm:nth-child(8) {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            #l9:checked ~ {
+                div {
+                    p {
+                        .lv-2:nth-child(4) {
+                            &:before {
+                                background-color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .Skill {
+                    .material {
+                        p {
+                            .harm:nth-child(9) {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            #l10:checked ~ {
+                div {
+                    p {
+                        .lv-2:nth-child(5) {
+                            &:before {
+                                background-color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .Skill {
+                    .material {
+                        p {
+                            .harm:nth-child(10) {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            div {
+                @include ras(100%, auto);
+                display: block;
+                p {
+                    text-align: center;
+                    font-size: 0rem;
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                    }
+                    label {
+                        display: inline-block;
+                        @include ras(3rem, 3rem);
+                        position: relative;
+                        margin: 0.8rem;
+                        margin-bottom: 1rem;
+                        line-height: 3rem;
+                        font: 1.5rem/3rem 'Orbitron', sans-serif;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            background-color: rgb(255, 0, 21);
+                            z-index: -1;
+                            transform: rotateZ(45deg);
+                        }
+                    }
+                }
+            }
+            .Skill {
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                @include ras(100%, auto);
+                .material {
+                    @include ras(25%, 100%);
+                    font-size: 0;
+                    min-height: 10rem;
+                    p {
+                        min-width: 10.5rem;
+                        text-align: center;
+                        font-size: 1.6rem;
+                        &:nth-child(1) {
+                            font-weight: bold;
+                        }
+                        .harm {
+                            display: none;
+                            color: red;
+                            user-select: none;
+                            .EX1 {
+                                font-size: 1.8rem;
+                                width: 100%;
+                                color: rgb(255, 0, 0);
+                            }
+                        }
+                        // img {
+                        //     position: absolute;
+                        //     width: 6rem;
+                        //     height: auto;
+                        //     vertical-align: top;
+                        //     image-rendering: -moz-crisp-edges;
+                        //     image-rendering: -o-crisp-edges;
+                        //     image-rendering: -webkit-optimize-contrast;
+                        //     image-rendering: crisp-edges;
+                        //     -ms-interpolation-mode: nearest-neighbor;
+                        //     top: 0;
+                        //     bottom: 0;
+                        //     right: 0;
+                        //     left: 0;
+                        //     margin: auto;
+                        // }
+                        // .img {
+                        //     width: 5.5rem;
+                        // }
+
+                        span {
+                            margin: 0 0.2rem;
+                            span {
+                                @include ras(6.5rem, 6.5rem);
+                                display: inline-block;
+                                vertical-align: top;
+                                image-rendering: -moz-crisp-edges;
+                                image-rendering: -o-crisp-edges;
+                                image-rendering: -webkit-optimize-contrast;
+                                image-rendering: crisp-edges;
+                                -ms-interpolation-mode: nearest-neighbor;
+                                position: relative;
+                                margin-bottom: 2.2rem;
+                                span {
+                                    display: block;
+                                    bottom: -6.5rem;
+                                    font-size: 1.7rem;
+                                    font-weight: bold;
+                                }
+                            }
+                            .bon-1 {
+                                background: url(./img/R2.png) 100%/100%, url(./img/bon-C.png) no-repeat 50% 50%/90%,
+                                    url(./img/R1.png) 100%/100%;
+                            }
+                            .bon-2 {
+                                background: url(./img/SR2.png) 100%/100%, url(./img/bon-R.png) no-repeat 50% 50%/90%,
+                                    url(./img/SR1.png) 100%/100%;
+                            }
+                            .bon-3 {
+                                background: url(./img/EX1.png) 100%/100%, url(./img/bon-SR.png) no-repeat 50% 50%/90%,
+                                    url(./img/bon.png) 100%/100%;
+                            }
+
+                            .dark-1 {
+                                background: url(./img/C2.png) 100%/100%, url(./img/dark-C.png) no-repeat 50% 50%/90%,
+                                    url(./img/C1.png) 100%/100%;
+                            }
+                            .dark-2 {
+                                background: url(./img/R2.png) 100%/100%, url(./img/dark-R.png) no-repeat 50% 50%/90%,
+                                    url(./img/R1.png) 100%/100%;
+                            }
+                            .dark-3 {
+                                background: url(./img/SR2.png) 100%/100%, url(./img/dark-SR.png) no-repeat 50% 50%/90%,
+                                    url(./img/SR1.png) 100%/100%;
+                            }
+
+                            .fire-1 {
+                                background: url(./img/C2.png) 100%/100%, url(./img/fire-C.png) no-repeat 50% 50%/90%,
+                                    url(./img/C1.png) 100%/100%;
+                            }
+                            .fire-2 {
+                                background: url(./img/R2.png) 100%/100%, url(./img/fire-R.png) no-repeat 50% 50%/90%,
+                                    url(./img/R1.png) 100%/100%;
+                            }
+                            .fire-3 {
+                                background: url(./img/SR2.png) 100%/100%, url(./img/fire-SR.png) no-repeat 50% 50%/90%,
+                                    url(./img/SR1.png) 100%/100%;
+                            }
+
+                            .land-1 {
+                                background: url(./img/C2.png) 100%/100%, url(./img/land-C.png) no-repeat 50% 50%/90%,
+                                    url(./img/C1.png) 100%/100%;
+                            }
+                            .land-2 {
+                                background: url(./img/R2.png) 100%/100%, url(./img/land-R.png) no-repeat 50% 50%/90%,
+                                    url(./img/R1.png) 100%/100%;
+                            }
+                            .land-3 {
+                                background: url(./img/SR2.png) 100%/100%, url(./img/land-SR.png) no-repeat 50% 50%/90%,
+                                    url(./img/SR1.png) 100%/100%;
+                            }
+
+                            .Light-1 {
+                                background: url(./img/C2.png) 100%/100%, url(./img/Light-C.png) no-repeat 50% 50%/90%,
+                                    url(./img/C1.png) 100%/100%;
+                            }
+                            .Light-2 {
+                                background: url(./img/R2.png) 100%/100%, url(./img/Light-R.png) no-repeat 50% 50%/90%,
+                                    url(./img/R1.png) 100%/100%;
+                            }
+                            .Light-3 {
+                                background: url(./img/SR2.png) 100%/100%, url(./img/Light-SR.png) no-repeat 50% 50%/90%,
+                                    url(./img/SR1.png) 100%/100%;
+                            }
+
+                            .water-1 {
+                                background: url(./img/C2.png) 100%/100%, url(./img/water-C.png) no-repeat 50% 50%/90%,
+                                    url(./img/C1.png) 100%/100%;
+                            }
+                            .water-2 {
+                                background: url(./img/R2.png) 100%/100%, url(./img/water-R.png) no-repeat 50% 50%/90%,
+                                    url(./img/R1.png) 100%/100%;
+                            }
+                            .water-3 {
+                                background: url(./img/SR2.png) 100%/100%, url(./img/water-SR.png) no-repeat 50% 50%/90%,
+                                    url(./img/SR1.png) 100%/100%;
+                            }
+
+                            .wind-1 {
+                                background: url(./img/C2.png) 100%/100%, url(./img/wind-C.png) no-repeat 50% 50%/90%,
+                                    url(./img/C1.png) 100%/100%;
+                            }
+                            .wind-2 {
+                                background: url(./img/R2.png) 100%/100%, url(./img/wind-R.png) no-repeat 50% 50%/90%,
+                                    url(./img/R1.png) 100%/100%;
+                            }
+                            .wind-3 {
+                                background: url(./img/SR2.png) 100%/100%, url(./img/wind-SR.png) no-repeat 50% 50%/90%,
+                                    url(./img/SR1.png) 100%/100%;
+                            }
+
+                            .ex {
+                                background: url(./img/EX1.png) 100%/100%, url(./img/ALL-EX.png) no-repeat 50% 50%/90%,
+                                    url(./img/EX.png) 100%/100%;
+                            }
+                        }
+                    }
+                }
+                .material-m1 {
+                    width: 49.5%;
+                    min-height: 20rem;
+                }
+                .material-m3 {
+                    width: 0.3rem;
+                    height: auto;
+                    background-color: rgb(255, 250, 202);
+                }
+                .material-m2 {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:875px) {
+    .glod-box {
+        .glod {
+            .glod-top {
+                flex-direction: column;
+                .aside {
+                    box-sizing: border-box;
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+            .glod-material-list {
+                .Skill {
+                    .material {
+                        width: 50%;
+                    }
+                    .material-m1 {
+                        width: 100%;
+                        min-height: 10rem;
+                    }
+                    .material-m2 {
+                        width: 100%;
+                    }
+                    .material-m3 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

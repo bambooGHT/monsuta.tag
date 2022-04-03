@@ -14,7 +14,7 @@ html {
     }
 }
 .boxA {
-    @include ras(100%,auto);
+    @include ras(100%, auto);
     padding: 1rem 0;
     box-sizing: border-box;
     input {
@@ -81,7 +81,7 @@ html {
                     display: none;
                 }
                 .che3 {
-                    display: block;
+                    display: inline-block;
                     opacity: 1;
                 }
             }
@@ -118,10 +118,10 @@ html {
             overflow: hidden;
             @include ras(100%, 0);
             transition: 0.5s;
-            background: radial-gradient(circle at top left, transparent 1.5rem, rgba(255, 255, 255,.8) 0) top left,
-                radial-gradient(circle at top right, transparent 1.5rem, rgba(255, 255, 255,.8) 0) top right,
-                radial-gradient(circle at bottom right, transparent 1.5rem, rgba(255, 255, 255,.8) 0) bottom right,
-                radial-gradient(circle at bottom left, transparent 1.5rem, rgba(255, 255, 255,.8) 0) bottom left;
+            background: radial-gradient(circle at top left, transparent 1.5rem, rgba(255, 255, 255, 0.8) 0) top left,
+                radial-gradient(circle at top right, transparent 1.5rem, rgba(255, 255, 255, 0.8) 0) top right,
+                radial-gradient(circle at bottom right, transparent 1.5rem, rgba(255, 255, 255, 0.8) 0) bottom right,
+                radial-gradient(circle at bottom left, transparent 1.5rem, rgba(255, 255, 255, 0.8) 0) bottom left;
             background-size: 50% 50%;
             background-repeat: no-repeat;
             position: absolute;
@@ -164,6 +164,64 @@ html {
                         &:hover::before {
                             background-size: 100% 0.2rem;
                         }
+                    }
+                }
+            }
+            .che3 {
+                .BG {
+                    display: inline-block;
+                    @include ras(14rem, 7.6rem);
+                    position: relative;
+                    user-select: none;
+                    pointer-events: none;
+                    margin-bottom: 1rem;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: -1rem;
+                        left: 0;
+                        width: 100%;
+                        height: 0.2rem;
+                        transition: 0.5s;
+                        background: linear-gradient(90deg, #0084ffe5, rgb(0, 255, 170));
+                        background-size: 0 0.2rem;
+                        background-repeat: no-repeat;
+                        background-position: 50% bottom;
+                        transition: 0.5s all;
+                    }
+
+                    &:hover::before {
+                        background-size: 100% 0.2rem;
+                    }
+                    img {
+                        @include ras(7rem, 7rem);
+                        vertical-align: top;
+                        image-rendering: -webkit-optimize-contrast;
+                        position: absolute;
+                        padding: 0.5rem;
+                        pointer-events: auto;
+                        box-sizing: border-box;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        margin: 0 auto;
+                        &:nth-child(2) {
+                            @include ras(7.6rem, 7.6rem);
+                            pointer-events: none;
+                            user-select: none;
+                        }
+                    }
+                    p {
+                        position: absolute;
+                        font-size: 1.3rem;
+                        bottom: -1rem;
+                        color: #000000;
+                        bottom: -1rem;
+                        right: 0;
+                        left: 0;
+                        margin: 0 auto;
+                        pointer-events: auto;
                     }
                 }
             }

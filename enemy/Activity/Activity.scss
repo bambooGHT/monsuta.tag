@@ -28,11 +28,13 @@ html {
     font-size: 10px;
 }
 body {
-    background: url(http://www.transparenttextures.com/patterns/fake-luxury.png) 50% 100%,
-        url(../Activity/bg1.png) no-repeat center/cover;
+    background: url(../Activity/bg1.png) no-repeat center/cover;
     background-attachment: fixed;
     height: 100vh;
+}
+.boxA{
     position: relative;
+    z-index: 9999;
 }
 .box1 {
     width: 80%;

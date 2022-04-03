@@ -1,0 +1,453 @@
+html {
+  font-size: 10px;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: url(../Activity/bg1.png) no-repeat center/cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.boxA {
+  position: relative;
+  z-index: 9999;
+}
+
+.glod-box {
+  width: 100%;
+  height: auto;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.glod-box .glod {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 1.5rem;
+}
+
+.glod-box .glod .glod-top {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0;
+}
+
+.glod-box .glod .glod-top .webp {
+  width: 100%;
+  height: auto;
+  min-width: 39rem;
+  margin: auto;
+}
+
+.glod-box .glod .glod-top .webp img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.glod-box .glod .glod-top .aside {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  padding-left: 2rem;
+  margin: auto;
+  background-color: rgba(255, 228, 196, 0.774);
+  border-radius: 3rem;
+  border: 0.2rem solid #ffe712;
+  -webkit-box-shadow: 0 0 1rem #dfcc28;
+          box-shadow: 0 0 1rem #dfcc28;
+}
+
+.glod-box .glod .glod-top .aside p {
+  font-size: 2rem;
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+}
+
+.glod-box .glod .glod-top .aside p img {
+  vertical-align: sub;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  width: 3rem;
+  height: 3rem;
+}
+
+.glod-box .glod .glod-top .aside p:nth-child(1) {
+  padding-top: 3rem;
+  padding-bottom: 9rem;
+}
+
+.glod-box .glod .glod-top .aside .Intensive-Care {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.glod-box .glod .glod-top .aside .care-1 {
+  font-weight: bold;
+}
+
+.glod-box .glod .glod-material-list {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 228, 196, 0.774);
+  border-radius: 3rem;
+  border: 0.2rem solid #ffe712;
+  -webkit-box-shadow: 0 0 1rem #dfcc28;
+          box-shadow: 0 0 1rem #dfcc28;
+  position: relative;
+}
+
+.glod-box .glod .glod-material-list::before {
+  position: absolute;
+  content: '';
+  width: 95%;
+  height: 100%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: -1;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.glod-box .glod .glod-material-list input {
+  display: none;
+}
+
+.glod-box .glod .glod-material-list #l1:checked ~ div p .lv-1:nth-child(1):before {
+  background-color: white;
+}
+
+.glod-box .glod .glod-material-list #l1:checked ~ .Skill .material p .harm:nth-child(1) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l2:checked ~ div p .lv-1:nth-child(2):before {
+  background-color: white;
+}
+
+.glod-box .glod .glod-material-list #l2:checked ~ .Skill .material p .harm:nth-child(2) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l3:checked ~ div p .lv-1:nth-child(3):before {
+  background-color: white;
+}
+
+.glod-box .glod .glod-material-list #l3:checked ~ .Skill .material p .harm:nth-child(3) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l4:checked ~ div p .lv-1:nth-child(4):before {
+  background-color: white;
+}
+
+.glod-box .glod .glod-material-list #l4:checked ~ .Skill .material p .harm:nth-child(4) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l5:checked ~ div p .lv-1:nth-child(5):before {
+  background-color: white;
+}
+
+.glod-box .glod .glod-material-list #l5:checked ~ .Skill .material p .harm:nth-child(5) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l6:checked ~ div p .lv-2:nth-child(1):before {
+  background-color: white;
+}
+
+.glod-box .glod .glod-material-list #l6:checked ~ .Skill .material p .harm:nth-child(6) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l7:checked ~ div p .lv-2:nth-child(2):before {
+  background-color: white;
+}
+
+.glod-box .glod .glod-material-list #l7:checked ~ .Skill .material p .harm:nth-child(7) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l8:checked ~ div p .lv-2:nth-child(3):before {
+  background-color: white;
+}
+
+.glod-box .glod .glod-material-list #l8:checked ~ .Skill .material p .harm:nth-child(8) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l9:checked ~ div p .lv-2:nth-child(4):before {
+  background-color: white;
+}
+
+.glod-box .glod .glod-material-list #l9:checked ~ .Skill .material p .harm:nth-child(9) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l10:checked ~ div p .lv-2:nth-child(5):before {
+  background-color: white;
+}
+
+.glod-box .glod .glod-material-list #l10:checked ~ .Skill .material p .harm:nth-child(10) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list div {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.glod-box .glod .glod-material-list div p {
+  text-align: center;
+  font-size: 0rem;
+}
+
+.glod-box .glod .glod-material-list div p:nth-child(1), .glod-box .glod .glod-material-list div p:nth-child(2) {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.glod-box .glod .glod-material-list div p label {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  margin: 0.8rem;
+  margin-bottom: 1rem;
+  line-height: 3rem;
+  font: 1.5rem/3rem 'Orbitron', sans-serif;
+}
+
+.glod-box .glod .glod-material-list div p label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ff0015;
+  z-index: -1;
+  -webkit-transform: rotateZ(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotateZ(45deg);
+}
+
+.glod-box .glod .glod-material-list .Skill {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.glod-box .glod .glod-material-list .Skill .material {
+  width: 25%;
+  height: 100%;
+  font-size: 0;
+  min-height: 10rem;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p {
+  min-width: 10.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p:nth-child(1) {
+  font-weight: bold;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p .harm {
+  display: none;
+  color: red;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p .harm .EX1 {
+  font-size: 1.8rem;
+  width: 100%;
+  color: red;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span {
+  margin: 0 0.2rem;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span span {
+  width: 6.5rem;
+  height: 6.5rem;
+  display: inline-block;
+  vertical-align: top;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  position: relative;
+  margin-bottom: 2.2rem;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span span span {
+  display: block;
+  bottom: -6.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .bon-1 {
+  background: url(./img/R2.png) 100%/100%, url(./img/bon-C.png) no-repeat 50% 50%/90%, url(./img/R1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .bon-2 {
+  background: url(./img/SR2.png) 100%/100%, url(./img/bon-R.png) no-repeat 50% 50%/90%, url(./img/SR1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .bon-3 {
+  background: url(./img/EX1.png) 100%/100%, url(./img/bon-SR.png) no-repeat 50% 50%/90%, url(./img/bon.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .dark-1 {
+  background: url(./img/C2.png) 100%/100%, url(./img/dark-C.png) no-repeat 50% 50%/90%, url(./img/C1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .dark-2 {
+  background: url(./img/R2.png) 100%/100%, url(./img/dark-R.png) no-repeat 50% 50%/90%, url(./img/R1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .dark-3 {
+  background: url(./img/SR2.png) 100%/100%, url(./img/dark-SR.png) no-repeat 50% 50%/90%, url(./img/SR1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .fire-1 {
+  background: url(./img/C2.png) 100%/100%, url(./img/fire-C.png) no-repeat 50% 50%/90%, url(./img/C1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .fire-2 {
+  background: url(./img/R2.png) 100%/100%, url(./img/fire-R.png) no-repeat 50% 50%/90%, url(./img/R1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .fire-3 {
+  background: url(./img/SR2.png) 100%/100%, url(./img/fire-SR.png) no-repeat 50% 50%/90%, url(./img/SR1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .land-1 {
+  background: url(./img/C2.png) 100%/100%, url(./img/land-C.png) no-repeat 50% 50%/90%, url(./img/C1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .land-2 {
+  background: url(./img/R2.png) 100%/100%, url(./img/land-R.png) no-repeat 50% 50%/90%, url(./img/R1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .land-3 {
+  background: url(./img/SR2.png) 100%/100%, url(./img/land-SR.png) no-repeat 50% 50%/90%, url(./img/SR1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .Light-1 {
+  background: url(./img/C2.png) 100%/100%, url(./img/Light-C.png) no-repeat 50% 50%/90%, url(./img/C1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .Light-2 {
+  background: url(./img/R2.png) 100%/100%, url(./img/Light-R.png) no-repeat 50% 50%/90%, url(./img/R1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .Light-3 {
+  background: url(./img/SR2.png) 100%/100%, url(./img/Light-SR.png) no-repeat 50% 50%/90%, url(./img/SR1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .water-1 {
+  background: url(./img/C2.png) 100%/100%, url(./img/water-C.png) no-repeat 50% 50%/90%, url(./img/C1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .water-2 {
+  background: url(./img/R2.png) 100%/100%, url(./img/water-R.png) no-repeat 50% 50%/90%, url(./img/R1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .water-3 {
+  background: url(./img/SR2.png) 100%/100%, url(./img/water-SR.png) no-repeat 50% 50%/90%, url(./img/SR1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .wind-1 {
+  background: url(./img/C2.png) 100%/100%, url(./img/wind-C.png) no-repeat 50% 50%/90%, url(./img/C1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .wind-2 {
+  background: url(./img/R2.png) 100%/100%, url(./img/wind-R.png) no-repeat 50% 50%/90%, url(./img/R1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .wind-3 {
+  background: url(./img/SR2.png) 100%/100%, url(./img/wind-SR.png) no-repeat 50% 50%/90%, url(./img/SR1.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material p span .ex {
+  background: url(./img/EX1.png) 100%/100%, url(./img/ALL-EX.png) no-repeat 50% 50%/90%, url(./img/EX.png) 100%/100%;
+}
+
+.glod-box .glod .glod-material-list .Skill .material-m1 {
+  width: 49.5%;
+  min-height: 20rem;
+}
+
+.glod-box .glod .glod-material-list .Skill .material-m3 {
+  width: 0.3rem;
+  height: auto;
+  background-color: #fffaca;
+}
+
+.glod-box .glod .glod-material-list .Skill .material-m2 {
+  width: 50%;
+}
+
+@media screen and (max-width: 875px) {
+  .glod-box .glod .glod-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .glod-box .glod .glod-top .aside {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+  }
+  .glod-box .glod .glod-material-list .Skill .material {
+    width: 50%;
+  }
+  .glod-box .glod .glod-material-list .Skill .material-m1 {
+    width: 100%;
+    min-height: 10rem;
+  }
+  .glod-box .glod .glod-material-list .Skill .material-m2 {
+    width: 100%;
+  }
+  .glod-box .glod .glod-material-list .Skill .material-m3 {
+    display: none;
+  }
+}

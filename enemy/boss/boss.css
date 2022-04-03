@@ -9,8 +9,7 @@ html::-webkit-scrollbar {
 body {
   background: url(http://www.transparenttextures.com/patterns/fake-luxury.png) 50% 100%, url(../Activity/bg1.png) no-repeat center/cover;
   background-attachment: fixed;
-  height: 100%;
-  position: relative;
+  height: 100vh;
 }
 
 .boxA {
@@ -20,8 +19,11 @@ body {
 
 .box {
   width: 75%;
-  height: 100%;
+  height: auto;
   margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 1.5rem;
 }
 
 .box::before, .box::after {

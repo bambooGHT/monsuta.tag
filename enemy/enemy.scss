@@ -14,7 +14,7 @@ html {
     }
 }
 .boxA {
-    @include ras();
+    @include ras(100%,auto);
     padding: 1rem 0;
     box-sizing: border-box;
     input {
@@ -100,7 +100,7 @@ html {
                 font: bold 2rem/2rem Microsoft YaHei UI Light;
                 flex: none;
                 line-height: 5rem;
-                padding: 0 2rem;
+                padding: 0 1rem;
                 &:nth-child(1) {
                     margin-left: 5%;
                 }
@@ -174,7 +174,7 @@ html {
 @media screen and(max-width:800px) {
     .boxA {
         .header {
-            width: 80%;
+            width: 90%;
         }
     }
 }

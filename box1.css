@@ -19,7 +19,7 @@ body {
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 4rem;
+  padding-top: 2rem;
   margin: 0 auto;
 }
 
@@ -583,6 +583,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
+  margin-bottom: 1rem;
 }
 
 .box .td section .img img {
@@ -606,8 +607,10 @@ body {
 }
 
 .box .td section .img p {
+  position: absolute;
   font-size: 1.3rem;
-  color: #fff;
+  bottom: -1rem;
+  color: #000000;
 }
 
 .box .td .td-1, .box .td .td-2, .box .td .td-3, .box .td .td-4 {
@@ -710,6 +713,10 @@ body {
 .box .t2 section .tc1 .img img:nth-child(2) {
   width: 6.8rem;
   height: 6.8rem;
+}
+
+.box .t2 section .tc1 .img p {
+  position: static;
 }
 
 .box .t2 section .L {

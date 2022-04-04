@@ -113,6 +113,8 @@ body {
   -webkit-box-shadow: 0 0 1rem #dfcc28;
           box-shadow: 0 0 1rem #dfcc28;
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .glod-box .glod .glod-material-list::before {
@@ -425,14 +427,18 @@ body {
 }
 
 @media screen and (max-width: 875px) {
+  .glod-box .glod {
+    width: 95%;
+  }
   .glod-box .glod .glod-top {
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .glod-box .glod .glod-top .webp {
-    min-width: none;
+    min-width: 36rem;
   }
   .glod-box .glod .glod-top .aside {
     -webkit-box-sizing: border-box;

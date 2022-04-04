@@ -106,6 +106,7 @@ body {
             border: 0.2rem solid rgb(255, 231, 18);
             box-shadow: 0 0 1rem rgb(223, 204, 40);
             @include opa();
+            box-sizing: border-box;
             input {
                 display: none;
             }
@@ -526,10 +527,12 @@ body {
 @media screen and(max-width:875px) {
     .glod-box {
         .glod {
+            width: 95%;
             .glod-top {
+                width: 100%;
                 flex-direction: column;
                 .webp {
-                    min-width: none;
+                    min-width: 36rem;
                 }
                 .aside {
                     box-sizing: border-box;

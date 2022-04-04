@@ -528,6 +528,9 @@ body {
         .glod {
             .glod-top {
                 flex-direction: column;
+                .webp {
+                    min-width: none;
+                }
                 .aside {
                     box-sizing: border-box;
                     padding: 0;

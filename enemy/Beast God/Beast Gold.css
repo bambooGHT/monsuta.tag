@@ -431,6 +431,9 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .glod-box .glod .glod-top .webp {
+    min-width: none;
+  }
   .glod-box .glod .glod-top .aside {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;

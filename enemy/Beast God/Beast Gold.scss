@@ -126,6 +126,9 @@ body {
                             .harm:nth-child(1) {
                                 display: inline-block;
                             }
+                            .harm1:nth-child(11) {
+                                display: inline-block;
+                            }
                         }
                     }
                 }
@@ -144,6 +147,9 @@ body {
                     .material {
                         p {
                             .harm:nth-child(2) {
+                                display: inline-block;
+                            }
+                            .harm1:nth-child(12) {
                                 display: inline-block;
                             }
                         }
@@ -166,6 +172,9 @@ body {
                             .harm:nth-child(3) {
                                 display: inline-block;
                             }
+                            .harm1:nth-child(13) {
+                                display: inline-block;
+                            }
                         }
                     }
                 }
@@ -184,6 +193,9 @@ body {
                     .material {
                         p {
                             .harm:nth-child(4) {
+                                display: inline-block;
+                            }
+                            .harm1:nth-child(14) {
                                 display: inline-block;
                             }
                         }
@@ -206,6 +218,9 @@ body {
                             .harm:nth-child(5) {
                                 display: inline-block;
                             }
+                            .harm1:nth-child(15) {
+                                display: inline-block;
+                            }
                         }
                     }
                 }
@@ -224,6 +239,9 @@ body {
                     .material {
                         p {
                             .harm:nth-child(6) {
+                                display: inline-block;
+                            }
+                            .harm1:nth-child(16) {
                                 display: inline-block;
                             }
                         }
@@ -246,6 +264,9 @@ body {
                             .harm:nth-child(7) {
                                 display: inline-block;
                             }
+                            .harm1:nth-child(17) {
+                                display: inline-block;
+                            }
                         }
                     }
                 }
@@ -264,6 +285,9 @@ body {
                     .material {
                         p {
                             .harm:nth-child(8) {
+                                display: inline-block;
+                            }
+                            .harm1:nth-child(18) {
                                 display: inline-block;
                             }
                         }
@@ -286,6 +310,9 @@ body {
                             .harm:nth-child(9) {
                                 display: inline-block;
                             }
+                            .harm1:nth-child(19) {
+                                display: inline-block;
+                            }
                         }
                     }
                 }
@@ -304,6 +331,9 @@ body {
                     .material {
                         p {
                             .harm:nth-child(10) {
+                                display: inline-block;
+                            }
+                            .harm1:nth-child(20) {
                                 display: inline-block;
                             }
                         }
@@ -359,7 +389,8 @@ body {
                         &:nth-child(1) {
                             font-weight: bold;
                         }
-                        .harm {
+                        .harm,
+                        .harm1 {
                             display: none;
                             color: red;
                             user-select: none;

@@ -142,11 +142,19 @@ body {
   display: inline-block;
 }
 
+.glod-box .glod .glod-material-list #l1:checked ~ .Skill .material p .harm1:nth-child(11) {
+  display: inline-block;
+}
+
 .glod-box .glod .glod-material-list #l2:checked ~ div p .lv-1:nth-child(2):before {
   background-color: white;
 }
 
 .glod-box .glod .glod-material-list #l2:checked ~ .Skill .material p .harm:nth-child(2) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l2:checked ~ .Skill .material p .harm1:nth-child(12) {
   display: inline-block;
 }
 
@@ -158,11 +166,19 @@ body {
   display: inline-block;
 }
 
+.glod-box .glod .glod-material-list #l3:checked ~ .Skill .material p .harm1:nth-child(13) {
+  display: inline-block;
+}
+
 .glod-box .glod .glod-material-list #l4:checked ~ div p .lv-1:nth-child(4):before {
   background-color: white;
 }
 
 .glod-box .glod .glod-material-list #l4:checked ~ .Skill .material p .harm:nth-child(4) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l4:checked ~ .Skill .material p .harm1:nth-child(14) {
   display: inline-block;
 }
 
@@ -174,11 +190,19 @@ body {
   display: inline-block;
 }
 
+.glod-box .glod .glod-material-list #l5:checked ~ .Skill .material p .harm1:nth-child(15) {
+  display: inline-block;
+}
+
 .glod-box .glod .glod-material-list #l6:checked ~ div p .lv-2:nth-child(1):before {
   background-color: white;
 }
 
 .glod-box .glod .glod-material-list #l6:checked ~ .Skill .material p .harm:nth-child(6) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l6:checked ~ .Skill .material p .harm1:nth-child(16) {
   display: inline-block;
 }
 
@@ -190,11 +214,19 @@ body {
   display: inline-block;
 }
 
+.glod-box .glod .glod-material-list #l7:checked ~ .Skill .material p .harm1:nth-child(17) {
+  display: inline-block;
+}
+
 .glod-box .glod .glod-material-list #l8:checked ~ div p .lv-2:nth-child(3):before {
   background-color: white;
 }
 
 .glod-box .glod .glod-material-list #l8:checked ~ .Skill .material p .harm:nth-child(8) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l8:checked ~ .Skill .material p .harm1:nth-child(18) {
   display: inline-block;
 }
 
@@ -206,11 +238,19 @@ body {
   display: inline-block;
 }
 
+.glod-box .glod .glod-material-list #l9:checked ~ .Skill .material p .harm1:nth-child(19) {
+  display: inline-block;
+}
+
 .glod-box .glod .glod-material-list #l10:checked ~ div p .lv-2:nth-child(5):before {
   background-color: white;
 }
 
 .glod-box .glod .glod-material-list #l10:checked ~ .Skill .material p .harm:nth-child(10) {
+  display: inline-block;
+}
+
+.glod-box .glod .glod-material-list #l10:checked ~ .Skill .material p .harm1:nth-child(20) {
   display: inline-block;
 }
 
@@ -283,7 +323,8 @@ body {
   font-weight: bold;
 }
 
-.glod-box .glod .glod-material-list .Skill .material p .harm {
+.glod-box .glod .glod-material-list .Skill .material p .harm,
+.glod-box .glod .glod-material-list .Skill .material p .harm1 {
   display: none;
   color: red;
   -webkit-user-select: none;
@@ -292,7 +333,8 @@ body {
           user-select: none;
 }
 
-.glod-box .glod .glod-material-list .Skill .material p .harm .EX1 {
+.glod-box .glod .glod-material-list .Skill .material p .harm .EX1,
+.glod-box .glod .glod-material-list .Skill .material p .harm1 .EX1 {
   font-size: 1.8rem;
   width: 100%;
   color: red;

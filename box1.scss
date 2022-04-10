@@ -596,8 +596,7 @@ body {
                 vertical-align: top;
                 font-size: 0;
                 &:active {
-                    transform: perspective(10rem) translateZ(-0.1rem);
-                    font-size: 0;
+                    transform: translate(0) scale(0.94);
                 }
                 &:nth-child(1) {
                     .atb:nth-child(1) {
@@ -714,6 +713,9 @@ body {
     }
     .t1 {
         padding-bottom: 2rem;
+        section {
+            min-height: 1rem;
+        }
     }
     .t2 {
         padding-bottom: 2rem;

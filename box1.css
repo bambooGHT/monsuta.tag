@@ -482,9 +482,9 @@ body {
 }
 
 .box .box2 .attribute li:active, .box .box3 .attribute li:active {
-  -webkit-transform: perspective(10rem) translateZ(-0.1rem);
-          transform: perspective(10rem) translateZ(-0.1rem);
-  font-size: 0;
+  -webkit-transform: translate(0) scale(0.94);
+      -ms-transform: translate(0) scale(0.94);
+          transform: translate(0) scale(0.94);
 }
 
 .box .box2 .attribute li:nth-child(1) .atb:nth-child(1), .box .box3 .attribute li:nth-child(1) .atb:nth-child(1) {
@@ -633,6 +633,10 @@ body {
 
 .box .t1 {
   padding-bottom: 2rem;
+}
+
+.box .t1 section {
+  min-height: 1rem;
 }
 
 .box .t2 {

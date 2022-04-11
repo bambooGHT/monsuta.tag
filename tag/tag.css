@@ -3,7 +3,11 @@ html {
 }
 
 body {
-  background: #ffd87d url(http://www.transparenttextures.com/patterns/fake-luxury.png) fixed 50% 100%;
+  background: url(../bg0.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 .box {
@@ -207,11 +211,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .box .td2 .td2-1 {
-  width: 80rem;
+  width: 95rem;
   height: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -239,7 +243,7 @@ body {
   right: 50%;
   top: auto;
   margin-top: 5rem;
-  margin-right: 51rem;
+  margin-right: 58.5rem;
 }
 
 .box .td2 .td2-1 .cn span {
@@ -285,7 +289,7 @@ body {
   z-index: 9999;
   right: 50%;
   top: auto;
-  margin-right: 51rem;
+  margin-right: 58.5rem;
 }
 
 .box .td2 .td2-1 .img span {
@@ -327,7 +331,7 @@ body {
 }
 
 .box .td2 .td2-1 .t .t1 {
-  width: 45rem;
+  width: 65%;
   height: 100%;
   border-right: 2px solid white;
 }
@@ -580,7 +584,7 @@ body {
   width: 19rem;
   height: 100%;
   margin-left: 1rem;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .box .td2 .td2-2 .t3:nth-of-type(3) {

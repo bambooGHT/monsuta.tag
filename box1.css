@@ -584,6 +584,7 @@ body {
           user-select: none;
   pointer-events: none;
   margin-bottom: 1rem;
+  max-width: 8rem;
 }
 
 .box .td section .img img {
@@ -611,6 +612,8 @@ body {
   font-size: 1.3rem;
   bottom: -1rem;
   color: #000000;
+  width: 8rem;
+  text-align: center;
 }
 
 .box .td .td-1, .box .td .td-2, .box .td .td-3, .box .td .td-4 {

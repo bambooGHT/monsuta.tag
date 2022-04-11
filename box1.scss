@@ -666,6 +666,7 @@ body {
                 user-select: none;
                 pointer-events: none;
                 margin-bottom: 1rem;
+                max-width: 8rem;
                 img {
                     @include ras(7rem, 7rem);
                     vertical-align: top;
@@ -684,6 +685,8 @@ body {
                     font-size: 1.3rem;
                     bottom: -1rem;
                     color: #000000;
+                    width: 8rem;
+                    text-align: center;
                 }
             }
         }

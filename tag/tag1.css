@@ -9,20 +9,20 @@ html {
 }
 
 .box .td2 .td2-1 {
-  width: 65%;
+  width: 70%;
   height: 100%;
 }
 
 .box .td2 .td2-1 .cn {
   position: absolute;
   right: 0;
-  left: -6.3rem;
+  left: -5.8rem;
 }
 
 .box .td2 .td2-1 .img {
   position: absolute;
   right: 0;
-  left: -5.4rem;
+  left: -4.9rem;
 }
 
 .box .td2 .td2-1 .t {
@@ -40,7 +40,7 @@ html {
 }
 
 .box .td2 .td2-1 .t .t1 img {
-  width: 50%;
+  width: 80%;
   height: auto;
   display: block;
   margin: 0 auto;

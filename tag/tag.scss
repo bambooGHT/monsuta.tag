@@ -17,7 +17,11 @@ html {
     font-size: 10px;
 }
 body {
-    background: #ffd87d url(http://www.transparenttextures.com/patterns/fake-luxury.png) fixed 50% 100%;
+    background: url(../bg0.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
 }
 .box {
     @include ras(100%, 100vh);
@@ -303,12 +307,12 @@ body {
         display: flex;
         justify-content: center;
         margin: auto;
-        padding: 2rem 0;
+        padding: 1rem 0;
         .td2-1 {
             * {
                 cursor: default;
             }
-            @include ras(80rem, 100%);
+            @include ras(95rem, 100%);
             flex-wrap: wrap;
             border: 3px solid rgb(217, 255, 0);
             box-shadow: 0 0 2rem rgba(0, 0, 0, 0.6);
@@ -324,7 +328,7 @@ body {
                 right: 50%;
                 top: auto;
                 margin-top: 5rem;
-                margin-right: 51rem;
+               margin-right: 58.5rem;
                 span {
                     display: block;
                     width: 0.2rem;
@@ -361,7 +365,7 @@ body {
                 z-index: 9999;
                 right: 50%;
                 top: auto;
-                margin-right: 51rem;
+                margin-right: 58.5rem;
                 span {
                     position: absolute;
                     width: 3rem;
@@ -385,7 +389,7 @@ body {
                 border-bottom: 2px solid rgb(255, 255, 255);
                 @include taxian;
                 .t1 {
-                    @include ras(45rem, 100%);
+                    @include ras(65%, 100%);
                     border-right: 2px solid rgb(255, 255, 255);
                     img {
                         @include ras(100%, auto);
@@ -586,7 +590,7 @@ body {
         .td2-2 {
             @include ras(19rem, 100%);
             margin-left: 1rem;
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.5);
             .t3:nth-of-type(3) {
                 border-bottom: none;
             }

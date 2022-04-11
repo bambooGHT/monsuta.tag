@@ -9,16 +9,16 @@ html {
     .td2 {
         transform: none;
         .td2-1 {
-            @include ras(65%, 100%);
+            @include ras(70%, 100%);
             .cn{
                 position: absolute;
                 right: 0;
-                left: -6.3rem;
+                left: -5.8rem;
             }
             .img{
                 position: absolute;
                 right: 0;
-                left: -5.4rem;
+                left: -4.9rem;
             }
             .t {
                 flex-direction: column;
@@ -28,7 +28,7 @@ html {
                     border-bottom: 2px solid rgb(255, 255, 255);
 
                     img {
-                        @include ras(50%, auto);
+                        @include ras(80%, auto);
                         display: block;
                         margin: 0 auto;
                     }
